@@ -27,3 +27,14 @@ nav {
   /* margin-left: -3px; */
   margin-bottom: 2vh;
 }
+main {
+  background: url("../images/We-run-all-your-marketing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position-y: -220px; */
+  background-position-x: -158px; /* change this to around -358px for mobile*/
+  width: 100vw;
+  height: 80vh;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}

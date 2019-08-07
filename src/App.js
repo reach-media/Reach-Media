@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+
       {/* <div id="testing">
         <div
           colors={["#00e4d0", "#5983e8"]}

@@ -32,7 +32,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   /* background-position-y: -220px; */
-  background-position-x: -158px;
+  background-position-x: -158px; /* change this to around -358px for mobile*/
   width: 100vw;
   height: 80vh;
   border-bottom-left-radius: 50%;

@@ -1,0 +1,57 @@
+main {
+  background: url("../images/We-run-all-your-marketing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position-y: -220px; */
+  background-position-x: -158px; /* change this to around -358px for mobile*/
+  width: 100vw;
+  height: 80vh;
+  border-radius: 0 0 85% 85% / 30%;
+  /* border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%; */
+}
+main p {
+  font-family: "Asap Bold", Arial, Helvetica, sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 93.6px;
+  color: #ffffff;
+  word-wrap: break-word;
+}
+#business_statement {
+  width: 80%;
+  margin: 0 auto;
+}
+#business_statement h1 {
+  font-family: "Asap", sans-serif;
+  color: #828282;
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 63px;
+}
+.service {
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 4vh;
+}
+.service h4 {
+  align-items: flex-start;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 26.4px;
+  color: #858587;
+}
+.service_h4 {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+}

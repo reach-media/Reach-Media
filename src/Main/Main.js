@@ -1,5 +1,6 @@
 import React from "react";
 import "./Main.css";
+import Carousel from "../Carousel/Carousel";
 export default function Main() {
   return (
     <div>
@@ -47,6 +48,7 @@ export default function Main() {
           </div>
         </div>
       </div>
+      <Carousel />
     </div>
   );
 }

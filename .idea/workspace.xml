@@ -35,13 +35,39 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
+=======
+      <file pinned="false" current-in-tab="false">
+>>>>>>> yusef
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+<<<<<<< HEAD
+=======
+                <element signature="e#114#151#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ChooseUs/ChooseUs.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-61" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ChooseUs/ChooseUs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+>>>>>>> yusef
               </folding>
             </state>
           </provider>
@@ -64,9 +90,14 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+<<<<<<< HEAD
     <option name="x" value="-1366" />
     <option name="width" value="1366" />
     <option name="height" value="768" />
+=======
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+>>>>>>> yusef
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -85,6 +116,15 @@
               <item name="Reach-Media" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
+=======
+            <path>
+              <item name="Reach-Media" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Reach-Media" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ChooseUs" type="462c0819:PsiDirectoryNode" />
+            </path>
+>>>>>>> yusef
           </expand>
           <select />
         </subPane>
@@ -135,23 +175,39 @@
       <updated>1564804287773</updated>
       <workItem from="1564804300333" duration="180000" />
       <workItem from="1565233803225" duration="182000" />
+<<<<<<< HEAD
       <workItem from="1565233988951" duration="5669000" />
+=======
+      <workItem from="1565233988951" duration="5889000" />
+      <workItem from="1565280888038" duration="207000" />
+>>>>>>> yusef
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="6038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
+=======
+    <option name="totallyTimeSpent" value="6458000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+>>>>>>> yusef
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18884121" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295129" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.3299363" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
+>>>>>>> yusef
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -201,6 +257,22 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/src/Header/Header.css" />
+    <entry file="file://$PROJECT_DIR$/src/Header/Header.js" />
+    <entry file="file://$PROJECT_DIR$/src/App.css" />
+    <entry file="file://$PROJECT_DIR$/src/images/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Navbar/Navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> yusef
     <entry file="file://$PROJECT_DIR$/src/images/hamburger_icon.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -216,19 +288,27 @@
     <entry file="file://$PROJECT_DIR$/src/images/study_up_logo.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Header/Header.css" />
     <entry file="file://$PROJECT_DIR$/src/Header/Header.js" />
     <entry file="file://$PROJECT_DIR$/src/App.css" />
+=======
+>>>>>>> yusef
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+<<<<<<< HEAD
+=======
+            <element signature="e#114#151#0" expanded="true" />
+>>>>>>> yusef
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/images/logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -236,6 +316,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/ChooseUs/ChooseUs.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ChooseUs/ChooseUs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+>>>>>>> yusef
         </state>
       </provider>
     </entry>

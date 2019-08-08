@@ -1,0 +1,38 @@
+#facts {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  margin: 0 auto;
+}
+.first_andthird_statements,
+.second_andfourth_statements {
+  width: 230px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.first_andthird_statements {
+  background: #e2231a;
+  color: white;
+}
+.second_andfourth_statements {
+  color: red;
+}
+.first_andthird_statements h1,
+.second_andfourth_statements h1 {
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "open sans", Arial, Helvetica, sans-serif; */
+  font-size: 82px;
+  line-height: 72px;
+  font-weight: 900;
+}
+.first_andthird_statements p,
+.second_andfourth_statements p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 29px;
+  font-weight: 500;
+  line-height: 34.2px;
+}
+/* .first_andthird_statements; */

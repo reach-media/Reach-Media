@@ -16,8 +16,9 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import logo from '../images/logo.png'
-
+import { UncontrolledDropdown,DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 const drawerWidth = 240;
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -39,6 +40,8 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     flexGrow: 1,
+    fontSize: 14,
+    fontWeight: '700',
   },
   hide: {
     display: 'none',
@@ -98,10 +101,36 @@ export default function PersistentDrawerRight() {
           [classes.appBarShift]: open,
         })}
       >
-        <Toolbar>
-          <Typography variant="h6" noWrap className={classes.title}>
+        <Toolbar className='desktop'>
           <img src={logo} alt='logo' />
+          <Typography variant="h6" noWrap className={classes.title}>
+            HOME
           </Typography>
+            <Typography variant="h6" noWrap className={classes.title}>
+            WHO WE ARE
+          </Typography>
+
+          <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret>
+               <Typography variant="h6" noWrap className={classes.title}>
+            WHAT WE DO
+          </Typography>
+                </DropdownToggle>
+                <DropdownMenu right>
+                  <DropdownItem>
+                    AFRICAN
+                  </DropdownItem>
+                  <DropdownItem>
+                    AMERICAN
+                  </DropdownItem>
+                  <DropdownItem>
+                    SOUTH AMERICA
+                  </DropdownItem>
+                  <DropdownItem>
+                    CARIBBEAN ISLANDS
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -113,14 +142,6 @@ export default function PersistentDrawerRight() {
           </IconButton>
         </Toolbar>
       </AppBar>
-      <main
-        className={clsx(classes.content, {
-          [classes.contentShift]: open,
-        })}
-      >
-        <div className={classes.drawerHeader} />
-
-      </main>
       <Drawer
         className={classes.drawer}
         variant="persistent"

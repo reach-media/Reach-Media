@@ -5,6 +5,7 @@
 .slick-list {
   width: 80vw;
   margin: 0 auto;
+  margin-bottom: 5vh;
 }
 .slick-arrow {
   color: red;

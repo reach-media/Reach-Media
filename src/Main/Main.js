@@ -1,6 +1,7 @@
 import React from "react";
 import "./Main.css";
 import Carousel from "../Carousel/Carousel";
+import ChooseUs from "../ChooseUs/ChooseUs";
 export default function Main() {
   return (
     <div>
@@ -49,6 +50,7 @@ export default function Main() {
         </div>
       </div>
       <Carousel />
+      <ChooseUs />
     </div>
   );
 }

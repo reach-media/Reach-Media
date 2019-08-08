@@ -2,19 +2,10 @@ import React from 'react';
 import clsx from 'clsx';
 import './navbar.scss'
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import {Drawer,AppBar, Toolbar }from '@material-ui/core';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
-import IconButton from '@material-ui/core/IconButton';
+import {Drawer,AppBar, Toolbar,CssBaseline,List, Divider,IconButton }from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
 import logo from '../images/logo.png'
 import { UncontrolledDropdown,DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 const drawerWidth = 240;
@@ -37,6 +28,12 @@ const useStyles = makeStyles(theme => ({
       duration: theme.transitions.duration.enteringScreen,
     }),
     marginRight: drawerWidth,
+  },
+  menu: {
+    fontSize: 14,
+    fontWeight: '500',
+    color: 'black',
+    textAlign: 'left'
   },
   title: {
     fontSize: 14,
@@ -161,21 +158,39 @@ export default function PersistentDrawerRight() {
         </div>
         <Divider />
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
+           <DropdownToggle nav className={classes.menu} color='danger'>
+            HOME
+           </DropdownToggle>
+          <Divider />
+           <DropdownToggle nav className={classes.menu} color='danger'>
+            WHO WE ARE
+           </DropdownToggle>
+          <Divider />
+           <UncontrolledDropdown nav inNavbar >
+                <DropdownToggle nav caret className={classes.menu} color='danger'>
+            WHAT WE DO
+                </DropdownToggle>
+                <DropdownMenu >
+                  <DropdownItem>
+                    WEB DEVELOPMENT
+                  </DropdownItem>
+                  <DropdownItem>
+                    MARKETING
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+          <Divider />
+           <DropdownToggle nav className={classes.menu} color='danger'>
+            OUR WORK
+           </DropdownToggle>
+          <Divider />
+          <DropdownToggle nav className={classes.menu} color='danger'>
+            BLOG
+          </DropdownToggle>
+          <Divider />
+           <DropdownToggle nav className={classes.menu} color='danger'>
+            CONTACT US
+           </DropdownToggle>
         </List>
       </Drawer>
     </div>

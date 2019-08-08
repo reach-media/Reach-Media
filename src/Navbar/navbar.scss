@@ -1,3 +1,16 @@
 li {
   list-style-type: none;
 }
+
+
+@media screen and (min-width: 958px){
+  .menu {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 958px){
+  .desktop {
+    display: none !important;
+  }
+}

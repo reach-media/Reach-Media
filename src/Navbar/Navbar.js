@@ -1,10 +1,10 @@
 import React from 'react';
 import clsx from 'clsx';
+import './navbar.scss'
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import {Drawer,AppBar, Toolbar }from '@material-ui/core';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import List from '@material-ui/core/List';
-import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -39,9 +39,9 @@ const useStyles = makeStyles(theme => ({
     marginRight: drawerWidth,
   },
   title: {
-    flexGrow: 1,
     fontSize: 14,
-    fontWeight: '700',
+    fontWeight: '500',
+    color: 'black'
   },
   hide: {
     display: 'none',
@@ -58,7 +58,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     padding: '0 8px',
     ...theme.mixins.toolbar,
-    justifyContent: 'flex-start',
+    justifyContent: 'space-between',
   },
   content: {
     flexGrow: 1,
@@ -101,44 +101,47 @@ export default function PersistentDrawerRight() {
           [classes.appBarShift]: open,
         })}
       >
-        <Toolbar className='desktop'>
+        <Toolbar >
           <img src={logo} alt='logo' />
-          <Typography variant="h6" noWrap className={classes.title}>
-            HOME
-          </Typography>
-            <Typography variant="h6" noWrap className={classes.title}>
-            WHO WE ARE
-          </Typography>
 
-          <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-               <Typography variant="h6" noWrap className={classes.title}>
-            WHAT WE DO
-          </Typography>
+          <Toolbar className='desktop'>
+          <DropdownToggle nav className={classes.title} color='danger'>
+            HOME
                 </DropdownToggle>
-                <DropdownMenu right>
+          <DropdownToggle nav className={classes.title} color='danger'>
+            WHO WE ARE
+                </DropdownToggle>
+          <UncontrolledDropdown nav inNavbar >
+                <DropdownToggle nav caret className={classes.title} color='danger'>
+            WHAT WE DO
+                </DropdownToggle>
+                <DropdownMenu >
                   <DropdownItem>
-                    AFRICAN
+                    WEB DEVELOPMENT
                   </DropdownItem>
                   <DropdownItem>
-                    AMERICAN
-                  </DropdownItem>
-                  <DropdownItem>
-                    SOUTH AMERICA
-                  </DropdownItem>
-                  <DropdownItem>
-                    CARIBBEAN ISLANDS
+                    MARKETING
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+          <DropdownToggle nav className={classes.title} color='danger'>
+            OUR WORK
+                </DropdownToggle>
+          <DropdownToggle nav className={classes.title} color='danger'>
+            BLOG
+                </DropdownToggle>
+          <DropdownToggle nav className={classes.title} color='danger'>
+            CONTACT US
+                </DropdownToggle>
+</Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="end"
             onClick={handleDrawerOpen}
-            className={clsx(open && classes.hide)}
+            className={`${clsx(open && classes.hide)} menu`}
           >
-            <MenuIcon />
+            <MenuIcon color='secondary'/>
           </IconButton>
         </Toolbar>
       </AppBar>

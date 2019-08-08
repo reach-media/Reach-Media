@@ -3,20 +3,33 @@
 
 /* This is the piece of code to get react-slick to be working normal */
 .slick-list {
-  width: 60vw;
+  width: 80vw;
   margin: 0 auto;
 }
 .slick-arrow {
   color: red;
 }
 .slick-prev {
-  left: 225px;
+  left: 70px;
 }
 .slick-next {
-  right: 225px;
+  right: 70px;
 }
 .slick-prev::before,
 .slick-next::before {
-  z-index: -2;
-  color: blue;
+  z-index: 2;
+  color: red;
+}
+/* END */
+.carousel_items {
+  display: flex;
+  justify-content: space-evenly;
+}
+.carousel_items img {
+  object-fit: contain;
+  width: 25%;
+  border-radius: 50%;
+}
+.items {
+  display: flex;
 }

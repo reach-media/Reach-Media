@@ -5,7 +5,7 @@ export default function Main() {
   return (
     <div>
       <main>
-        <p>We advance your business with great software</p>
+        <p>We Advance Your Business With Great Software</p>
       </main>
       <div id="business_statement">
         <h1>Cutting-edge Software And Digital Marketing Solutions</h1>
@@ -24,13 +24,13 @@ export default function Main() {
           </div>
         </div>
         <div className="service">
-          <i class="fas fa-bullseye fa-3x" />
+          <i class="fas fa-bullseye fa-3x middle_icons" />
           <div className="service_h4">
             <h4>Strategic Digital Marketing</h4>
           </div>
         </div>
         <div className="service">
-          <i class="fas fa-3x fa-hashtag" />
+          <i class="fas fa-3x fa-hashtag middle_icons" />
           <div className="service_h4">
             <h4>Social Media Management</h4>
           </div>

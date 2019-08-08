@@ -3,10 +3,14 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   /* background-position-y: -220px; */
-  background-position-x: -158px; /* change this to around -358px for mobile*/
+  /* change this to around -358px for mobile */
+  /* background-position-x: -158px; */
   width: 100vw;
   height: 80vh;
   border-radius: 0 0 85% 85% / 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   /* border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%; */
 }
@@ -18,6 +22,7 @@ main p {
   line-height: 93.6px;
   color: #ffffff;
   word-wrap: break-word;
+  width: 60%;
 }
 #business_statement {
   width: 80%;
@@ -54,4 +59,7 @@ main p {
   width: 60%;
   display: flex;
   justify-content: flex-start;
+}
+.middle_icons {
+  color: coral;
 }

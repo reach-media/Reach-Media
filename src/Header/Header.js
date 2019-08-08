@@ -16,7 +16,6 @@ export default function Header() {
           <img src={Icon} alt="" />
         </div>
       </nav>
-      <main />
     </div>
   );
 }

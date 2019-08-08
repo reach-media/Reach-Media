@@ -4,7 +4,9 @@ nav {
   width: 75vw;
   align-items: center;
   margin: 0 auto;
-  height: 10vh;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  /* height: 10vh; */
 }
 #logo {
   /* width: 25%; */
@@ -12,12 +14,12 @@ nav {
   justify-content: flex-start;
   align-items: center;
 }
-#hamburger_icon {
-  /* width: 27px;
-  height: 27px; */
-  /* background: blue; */
-  /* background: url("../images/hamburger_icon.png"); */
-}
+/* #hamburger_icon {
+  width: 27px;
+  height: 27px; 
+  background: blue; 
+   background: url("../images/hamburger_icon.png");
+} */
 #logo_img {
   width: 23%;
   z-index: 2;
@@ -25,16 +27,5 @@ nav {
 }
 #media_h2 {
   /* margin-left: -3px; */
-  margin-bottom: 2vh;
-}
-main {
-  background: url("../images/We-run-all-your-marketing.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* background-position-y: -220px; */
-  background-position-x: -158px; /* change this to around -358px for mobile*/
-  width: 100vw;
-  height: 80vh;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
+  margin-bottom: -1vh;
 }

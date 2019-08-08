@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edc7377f-e88f-422a-a608-2d64ebf37fb0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/images/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Navbar/Navbar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -159,18 +158,18 @@
       <updated>1564804287773</updated>
       <workItem from="1564804300333" duration="180000" />
       <workItem from="1565233803225" duration="182000" />
-      <workItem from="1565233988951" duration="5580000" />
+      <workItem from="1565233988951" duration="5669000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5942000" />
+    <option name="totallyTimeSpent" value="6031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1366" y="0" width="1366" height="768" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19637462" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19637462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -184,7 +183,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295129" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.256447" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.256447" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />

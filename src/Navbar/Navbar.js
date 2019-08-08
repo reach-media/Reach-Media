@@ -119,7 +119,7 @@ export default function PersistentDrawerRight() {
         })}
       >
         <div className={classes.drawerHeader} />
-        
+
       </main>
       <Drawer
         className={classes.drawer}

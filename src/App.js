@@ -1,5 +1,5 @@
 import React from "react";
-
+import Navbar from './Navbar/Navbar'
 
 
 
@@ -7,7 +7,7 @@ import React from "react";
 function App() {
   return (
     <div>
-
+    <Navbar/>
 
     </div>
   );

@@ -18,7 +18,7 @@ export default function Footer(){
 
             </section>
             <section className='social'>
-                <div className='social'>
+                <div className='content'>
                 <p>Copyright &#169; {new Date().getFullYear()} </p>
                 <p>Reach Media </p>
                 <p className='pipe'>&#x7c;</p>
@@ -26,7 +26,7 @@ export default function Footer(){
                 <p className='pipe'>&#x7c;</p>
                 <p>Privacy Policy</p>
                 </div>
-
+ <div>
                      <a href="https://www.facebook.com/socialcornerdfw/?__tn__=%2Cd%2CP-R&eid=ARAi246OzIX-pm7QntKJxiF_dVJUsWfD3PoN_bGzBdBrlUUysCbK1YV-MLXywoPJGzyeccrkbYZQtV5L" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebookF} size="2x"/>
 
@@ -40,6 +40,7 @@ export default function Footer(){
                  <a href="https://www.instagram.com/socialcornerdfw/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedinIn} size="2x"/>
         </a>
+      </div>
             </section>
         </footer>
     )

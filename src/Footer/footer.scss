@@ -5,8 +5,14 @@
   color: white;
   .social {
     background: #171717;
-    height: 6em;
+    height: 5em;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    .content {
+      display: flex;
+    }
   }
   a {
     color: white;

@@ -1,9 +1,9 @@
 import React from 'react'
 import './footer.scss'
 
-const Footer = ()=> {
+export default function Footer(){
     return (
-        <footer>
+        <footer className='footer'>
             <section>
                 <h3>TALK TO US</h3>
                 <p>801-123-1234</p>

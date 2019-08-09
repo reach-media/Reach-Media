@@ -18,15 +18,14 @@ export default function Footer(){
 
             </section>
             <section className='social'>
-                <div className='social'>
-                <p>Copyright &#169; {new Date().getFullYear()} </p>
-                <p>Reach Media </p>
+                <div className='content'>
+                    <p>Copyright &#169; {new Date().getFullYear()} <a className='large'>Reach Media</a></p>
                 <p className='pipe'>&#x7c;</p>
-                <p>Terms and Conditions</p>
+                <p  className='large'>Terms and Conditions</p>
                 <p className='pipe'>&#x7c;</p>
-                <p>Privacy Policy</p>
+                <p  className='large'>Privacy Policy</p>
                 </div>
-
+ <div className='icons'>
                      <a href="https://www.facebook.com/socialcornerdfw/?__tn__=%2Cd%2CP-R&eid=ARAi246OzIX-pm7QntKJxiF_dVJUsWfD3PoN_bGzBdBrlUUysCbK1YV-MLXywoPJGzyeccrkbYZQtV5L" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebookF} size="2x"/>
 
@@ -40,6 +39,7 @@ export default function Footer(){
                  <a href="https://www.instagram.com/socialcornerdfw/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedinIn} size="2x"/>
         </a>
+      </div>
             </section>
         </footer>
     )

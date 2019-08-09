@@ -28,17 +28,17 @@ export default function Footer(){
                 <p  className='large'>Privacy Policy</p>
                 </div>
  <div className='icons'>
-                     <a href="https://www.facebook.com/socialcornerdfw/?__tn__=%2Cd%2CP-R&eid=ARAi246OzIX-pm7QntKJxiF_dVJUsWfD3PoN_bGzBdBrlUUysCbK1YV-MLXywoPJGzyeccrkbYZQtV5L" target="_blank" rel="noopener noreferrer">
+                     <a href="#" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebookF} size="2x"/>
 
         </a>
-                 <a href="https://www.instagram.com/socialcornerdfw/" target="_blank" rel="noopener noreferrer">
+                 <a href="#" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faTwitter} size="2x"/>
         </a>
-            <a href="https://www.instagram.com/socialcornerdfw/" target="_blank" rel="noopener noreferrer">
+            <a href="#" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} size="2x"/>
         </a>
-                 <a href="https://www.instagram.com/socialcornerdfw/" target="_blank" rel="noopener noreferrer">
+                 <a href="#" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedinIn} size="2x"/>
         </a>
       </div>

@@ -7,19 +7,21 @@ import {faFacebookF, faTwitter,faInstagram, faLinkedinIn} from "@fortawesome/fre
 export default function Footer(){
     return (
         <footer className='footer'>
-            <section>
+            <article className='article'>
+            <section className='contact'>
                 <h3>TALK TO US</h3>
-                <p>801-123-1234</p>
-                <p>reachmedia@gmail.com</p>
+                <p className='paragraph'>801-123-1234</p>
+                <p className='paragraph'> reachmedia@gmail.com</p>
             </section>
-             <section>
+             <section className='contact'>
                 <h3>KEEP UP WITH REACH MEDIA</h3>
                  <Subscribe/>
 
             </section>
+                </article>
             <section className='social'>
                 <div className='content'>
-                    <p>Copyright &#169; {new Date().getFullYear()} <a className='large'>Reach Media</a></p>
+                    <p><a className='copyright'>Copyright &#169; {new Date().getFullYear()} </a><a className='large'>Reach Media</a></p>
                 <p className='pipe'>&#x7c;</p>
                 <p  className='large'>Terms and Conditions</p>
                 <p className='pipe'>&#x7c;</p>

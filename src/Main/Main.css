@@ -11,8 +11,6 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%; */
 }
 main p {
   font-family: "Asap Bold", Arial, Helvetica, sans-serif;

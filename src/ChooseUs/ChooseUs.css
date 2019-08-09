@@ -36,3 +36,20 @@
   line-height: 34.2px;
 }
 /* .first_andthird_statements; */
+#why_partner_withUs {
+  margin-top: 20vh;
+  display: flex;
+  width: 90vw;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+#why_us,
+#why_us_pic {
+  width: 45%;
+}
+#why_us_pic {
+  background: url("../images/B2B-View-Case-Studies.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

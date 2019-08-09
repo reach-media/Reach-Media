@@ -1,8 +1,9 @@
 import React from 'react'
 import './footer.scss'
-import Subscribe from './Subscribe'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebookF, faTwitter,faInstagram, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
+import Subscribe from './Dialogue'
+
 
 export default function Footer(){
     return (
@@ -15,7 +16,7 @@ export default function Footer(){
             </section>
              <section className='contact'>
                 <h3>KEEP UP WITH REACH MEDIA</h3>
-                 <Subscribe/>
+                 <Subscribe />
 
             </section>
                 </article>

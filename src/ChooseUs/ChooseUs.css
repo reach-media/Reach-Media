@@ -36,20 +36,82 @@
   line-height: 34.2px;
 }
 /* .first_andthird_statements; */
-#why_partner_withUs {
-  margin-top: 20vh;
+.why_partner_withUs {
   display: flex;
-  width: 90vw;
   margin: 0 auto;
-  justify-content: space-between;
+  margin-top: 7vh;
+  width: 75vw;
+  justify-content: space-around;
 }
-#why_us,
-#why_us_pic {
+.why_us {
+  text-align: left;
+}
+.why_us,
+#why_us_pic,
+#why_us_pic2 {
   width: 45%;
 }
 #why_us_pic {
-  background: url("../images/B2B-View-Case-Studies.png");
+  background: url("../images/austin-distel-wD1LRb9OeEo-unsplash.jpg");
+}
+#why_us_pic2 {
+  background: url("../images/camera-coffee-composition-1509428.jpg");
+}
+#why_us_pic,
+#why_us_pic2 {
+  border-radius: 7px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.why_partner_h1 {
+  font-family: "Asap", sans-serif;
+  font-size: 45px;
+  letter-spacing: 1px;
+  line-height: 63px;
+  text-align: left;
+  color: #333333;
+}
+.why_us p {
+  font-family: "Open sans", Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 34.2px;
+  text-align: left;
+  color: #666666;
+}
+#why_us_pic:hover,
+#why_us_pic2:hover {
+  opacity: 0.8;
+  width: 47%;
+}
+#connect {
+  font-family: "Asap", sans-serif;
+  font-size: 85px;
+  letter-spacing: 1px;
+  line-height: 119px;
+  text-align: center;
+  color: #333333;
+  margin-top: 5vh;
+  color: #e2231a;
+}
+#connect {
+  -webkit-animation: bgcolorchange 4s infinite; /* Chrome, Safari, Opera */
+  animation: 7s infinite ease-in-out bgcolorchange;
+}
+@keyframes bgcolorchange {
+  0% {
+    color: lightgrey;
+  }
+  25% {
+    color: grey;
+  }
+
+  50% {
+    color: #ea655e;
+  }
+
+  100% {
+    color: red;
+  }
 }

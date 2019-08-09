@@ -7,8 +7,6 @@ import Lady from "../images/testimonial-photo.png";
 import Work from "../images/portfolio-advice-present-future-work-620.jpg";
 import Mark from "../images/profile-marc-1.jpg";
 import Work2 from "../images/BBVACompass-Laptop_April_2017-1024x589.jpg";
-import Bill from "../images/bill-morones.png";
-import Work3 from "../images/343b0ec396800d1cbd0c0e6939e5afca_XL-compressor.jpg";
 class SimpleSlider extends React.Component {
   render() {
     var settings = {

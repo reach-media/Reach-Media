@@ -2,7 +2,7 @@ import React from 'react'
 import './footer.scss'
 import Subscribe from './Subscribe'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faFacebookSquare, faInstagram} from "@fortawesome/free-brands-svg-icons";
+import {faFacebookF, faTwitter,faInstagram} from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer(){
     return (
@@ -19,7 +19,11 @@ export default function Footer(){
             </section>
             <section className='social'>
                      <a href="https://www.facebook.com/socialcornerdfw/?__tn__=%2Cd%2CP-R&eid=ARAi246OzIX-pm7QntKJxiF_dVJUsWfD3PoN_bGzBdBrlUUysCbK1YV-MLXywoPJGzyeccrkbYZQtV5L" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faFacebookSquare} size="2x"/>
+            <FontAwesomeIcon icon={faFacebookF} size="2x"/>
+
+        </a>
+                 <a href="https://www.instagram.com/socialcornerdfw/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faTwitter} size="2x"/>
         </a>
             <a href="https://www.instagram.com/socialcornerdfw/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} size="2x"/>

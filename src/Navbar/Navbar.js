@@ -6,6 +6,7 @@ import {Drawer,AppBar, Toolbar,CssBaseline,List, Divider,IconButton }from '@mate
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import {Link} from 'react-router-dom'
 import logo from '../images/logo.png'
 import { UncontrolledDropdown,DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 const drawerWidth = 240;
@@ -27,18 +28,19 @@ const useStyles = makeStyles(theme => ({
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,
     }),
+
     marginRight: drawerWidth,
   },
   menu: {
     fontSize: 14,
-    fontWeight: '500',
-    color: 'black',
+    fontWeight: '600',
+    color: 'rgba(0,0,0,.6)',
     textAlign: 'left'
   },
   title: {
     fontSize: 14,
-    fontWeight: '500',
-    color: 'black'
+    fontWeight: '600',
+    color: 'rgba(0,0,0,.6)'
   },
   hide: {
     display: 'none',
@@ -99,7 +101,7 @@ export default function PersistentDrawerRight() {
         })}
       >
         <Toolbar >
-          <img src={logo} alt='logo' />
+         <Link to='/' ><img src={logo} alt='logo' className='logo'/> </Link>
 
           <Toolbar className='desktop'>
           <DropdownToggle nav className={classes.title} color='danger'>

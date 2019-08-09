@@ -1,80 +1,92 @@
-import React from 'react';
-import clsx from 'clsx';
-import './navbar.scss'
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import {Drawer,AppBar, Toolbar,CssBaseline,List, Divider,IconButton }from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import {Link} from 'react-router-dom'
-import logo from '../images/logo.png'
-import { UncontrolledDropdown,DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import React from "react";
+import clsx from "clsx";
+import "./navbar.scss";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
+import {
+  Drawer,
+  AppBar,
+  Toolbar,
+  CssBaseline,
+  List,
+  Divider,
+  IconButton
+} from "@material-ui/core";
+import MenuIcon from "@material-ui/icons/Menu";
+import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import { Link } from "react-router-dom";
+import logo from "../images/logo.png";
+import {
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
+} from "reactstrap";
 const drawerWidth = 240;
-
 
 const useStyles = makeStyles(theme => ({
   root: {
-    display: 'flex',
+    display: "flex"
   },
   appBar: {
-    transition: theme.transitions.create(['margin', 'width'], {
+    transition: theme.transitions.create(["margin", "width"], {
       easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
+      duration: theme.transitions.duration.leavingScreen
+    })
   },
   appBarShift: {
     width: `calc(100% - ${drawerWidth}px)`,
-    transition: theme.transitions.create(['margin', 'width'], {
+    transition: theme.transitions.create(["margin", "width"], {
       easing: theme.transitions.easing.easeOut,
-      duration: theme.transitions.duration.enteringScreen,
+      duration: theme.transitions.duration.enteringScreen
     }),
 
-    marginRight: drawerWidth,
+    marginRight: drawerWidth
   },
   menu: {
     fontSize: 14,
-    fontWeight: '600',
-    color: 'rgba(0,0,0,.6)',
-    textAlign: 'left'
+    fontWeight: "600",
+    color: "rgba(0,0,0,.6)",
+    textAlign: "left"
   },
   title: {
     fontSize: 14,
-    fontWeight: '600',
-    color: 'rgba(0,0,0,.6)'
+    fontWeight: "600",
+    color: "rgba(0,0,0,.6)"
   },
   hide: {
-    display: 'none',
+    display: "none"
   },
   drawer: {
     width: drawerWidth,
-    flexShrink: 0,
+    flexShrink: 0
   },
   drawerPaper: {
-    width: drawerWidth,
+    width: drawerWidth
   },
   drawerHeader: {
-    display: 'flex',
-    alignItems: 'center',
-    padding: '0 8px',
+    display: "flex",
+    alignItems: "center",
+    padding: "0 8px",
     ...theme.mixins.toolbar,
-    justifyContent: 'space-between',
+    justifyContent: "space-between"
   },
   content: {
     flexGrow: 1,
     padding: theme.spacing(3),
-    transition: theme.transitions.create('margin', {
+    transition: theme.transitions.create("margin", {
       easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
+      duration: theme.transitions.duration.leavingScreen
     }),
-    marginRight: -drawerWidth,
+    marginRight: -drawerWidth
   },
   contentShift: {
-    transition: theme.transitions.create('margin', {
+    transition: theme.transitions.create("margin", {
       easing: theme.transitions.easing.easeOut,
-      duration: theme.transitions.duration.enteringScreen,
+      duration: theme.transitions.duration.enteringScreen
     }),
-    marginRight: 0,
-  },
+    marginRight: 0
+  }
 }));
 
 export default function PersistentDrawerRight() {
@@ -94,45 +106,48 @@ export default function PersistentDrawerRight() {
     <div className={classes.root}>
       <CssBaseline />
       <AppBar
-          color='inherit'
+        color="inherit"
         position="fixed"
         className={clsx(classes.appBar, {
-          [classes.appBarShift]: open,
+          [classes.appBarShift]: open
         })}
       >
-        <Toolbar >
-         <Link to='/' ><img src={logo} alt='logo' className='logo'/> </Link>
+        <Toolbar>
+          <Link to="/">
+            <img src={logo} alt="logo" className="logo" />{" "}
+          </Link>
 
-          <Toolbar className='desktop'>
-          <DropdownToggle nav className={classes.title} color='danger'>
-            HOME
-                </DropdownToggle>
-          <DropdownToggle nav className={classes.title} color='danger'>
-            WHO WE ARE
-                </DropdownToggle>
-          <UncontrolledDropdown nav inNavbar >
-                <DropdownToggle nav caret className={classes.title} color='danger'>
-            WHAT WE DO
-                </DropdownToggle>
-                <DropdownMenu >
-                  <DropdownItem>
-                    WEB DEVELOPMENT
-                  </DropdownItem>
-                  <DropdownItem>
-                    MARKETING
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-          <DropdownToggle nav className={classes.title} color='danger'>
-            OUR WORK
-                </DropdownToggle>
-          <DropdownToggle nav className={classes.title} color='danger'>
-            BLOG
-                </DropdownToggle>
-          <DropdownToggle nav className={classes.title} color='danger'>
-            CONTACT US
-                </DropdownToggle>
-</Toolbar>
+          <Toolbar className="desktop">
+            <DropdownToggle nav className={classes.title} color="danger">
+              HOME
+            </DropdownToggle>
+            <DropdownToggle nav className={classes.title} color="danger">
+              WHO WE ARE
+            </DropdownToggle>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle
+                nav
+                caret
+                className={classes.title}
+                color="danger"
+              >
+                WHAT WE DO
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem>WEB DEVELOPMENT</DropdownItem>
+                <DropdownItem>MARKETING</DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            <DropdownToggle nav className={classes.title} color="danger">
+              OUR WORK
+            </DropdownToggle>
+            <DropdownToggle nav className={classes.title} color="danger">
+              BLOG
+            </DropdownToggle>
+            <DropdownToggle nav className={classes.title} color="danger">
+              CONTACT US
+            </DropdownToggle>
+          </Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -140,7 +155,7 @@ export default function PersistentDrawerRight() {
             onClick={handleDrawerOpen}
             className={`${clsx(open && classes.hide)} menu`}
           >
-            <MenuIcon color='secondary'/>
+            <MenuIcon color="secondary" />
           </IconButton>
         </Toolbar>
       </AppBar>
@@ -150,49 +165,49 @@ export default function PersistentDrawerRight() {
         anchor="right"
         open={open}
         classes={{
-          paper: classes.drawerPaper,
+          paper: classes.drawerPaper
         }}
       >
         <div className={classes.drawerHeader}>
           <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'rtl' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+            {theme.direction === "rtl" ? (
+              <ChevronLeftIcon />
+            ) : (
+              <ChevronRightIcon />
+            )}
           </IconButton>
         </div>
         <Divider />
         <List>
-           <DropdownToggle nav className={classes.menu} color='danger'>
+          <DropdownToggle nav className={classes.menu} color="danger">
             HOME
-           </DropdownToggle>
+          </DropdownToggle>
           <Divider />
-           <DropdownToggle nav className={classes.menu} color='danger'>
+          <DropdownToggle nav className={classes.menu} color="danger">
             WHO WE ARE
-           </DropdownToggle>
+          </DropdownToggle>
           <Divider />
-           <UncontrolledDropdown nav inNavbar >
-                <DropdownToggle nav caret className={classes.menu} color='danger'>
-            WHAT WE DO
-                </DropdownToggle>
-                <DropdownMenu >
-                  <DropdownItem>
-                    WEB DEVELOPMENT
-                  </DropdownItem>
-                  <DropdownItem>
-                    MARKETING
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+          <UncontrolledDropdown nav inNavbar>
+            <DropdownToggle nav caret className={classes.menu} color="danger">
+              WHAT WE DO
+            </DropdownToggle>
+            <DropdownMenu>
+              <DropdownItem>WEB DEVELOPMENT</DropdownItem>
+              <DropdownItem>MARKETING</DropdownItem>
+            </DropdownMenu>
+          </UncontrolledDropdown>
           <Divider />
-           <DropdownToggle nav className={classes.menu} color='danger'>
+          <DropdownToggle nav className={classes.menu} color="danger">
             OUR WORK
-           </DropdownToggle>
+          </DropdownToggle>
           <Divider />
-          <DropdownToggle nav className={classes.menu} color='danger'>
+          <DropdownToggle nav className={classes.menu} color="danger">
             BLOG
           </DropdownToggle>
           <Divider />
-           <DropdownToggle nav className={classes.menu} color='danger'>
+          <DropdownToggle nav className={classes.menu} color="danger">
             CONTACT US
-           </DropdownToggle>
+          </DropdownToggle>
         </List>
       </Drawer>
     </div>

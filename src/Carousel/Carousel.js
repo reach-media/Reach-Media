@@ -1,7 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
 import "./Carousel.css";
-
+import Quote from "../images/red_quote.jpg";
+import Quote2 from "../images/red_quote2.jpg";
+import Quote3 from "../images/red_quote3.jpg";
 //Testimony pictures
 import Lady from "../images/testimonial-photo.png";
 import Work from "../images/portfolio-advice-present-future-work-620.jpg";
@@ -26,10 +28,12 @@ class SimpleSlider extends React.Component {
           <div className="items">
             <img src={Lady} alt="" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              enim aspernatur totam perspiciatis ipsum, consequuntur obcaecati,
-              asperiores excepturi sint repellat beatae harum quo rerum ullam
-              modi, aperiam odit dolores numquam.
+              <span>
+                <img src={Quote} alt="" />
+              </span>
+              Partnership with ReachMedia has been the best decision for my
+              business. From start to finish, they were diligent in creating a
+              beautiful website for us.
             </p>
             <img src={Work} alt="" />
           </div>
@@ -38,10 +42,11 @@ class SimpleSlider extends React.Component {
           <div className="items">
             <img src={Mark} alt="" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              enim aspernatur totam perspiciatis ipsum, consequuntur obcaecati,
-              asperiores excepturi sint repellat beatae harum quo rerum ullam
-              modi, aperiam odit dolores numquam.
+              <span>
+                <img src={Quote} alt="" />
+              </span>
+              With their top-notch software and digital marketing strategies, my
+              law firm grew unprecedentally and my website is now.
             </p>
             <img src={Work2} alt="" />
           </div>

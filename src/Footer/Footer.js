@@ -7,11 +7,14 @@ export default function Footer(){
             <section>
                 <h3>TALK TO US</h3>
                 <p>801-123-1234</p>
+                <p>reachmedia@gmail.com</p>
+            </section>
+             <section>
+                <h3>KEEP UP WITH REACH MEDIA</h3>
+
             </section>
             <section className='social'>
-                <div>
-                    <title>Hit</title>
-                </div>
+
             </section>
         </footer>
     )

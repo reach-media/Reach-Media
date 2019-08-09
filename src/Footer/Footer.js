@@ -1,5 +1,6 @@
 import React from 'react'
 import './footer.scss'
+import Subscribe from './Subscribe'
 
 export default function Footer(){
     return (
@@ -11,6 +12,7 @@ export default function Footer(){
             </section>
              <section>
                 <h3>KEEP UP WITH REACH MEDIA</h3>
+                 <Subscribe/>
 
             </section>
             <section className='social'>

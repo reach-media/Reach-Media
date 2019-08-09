@@ -1,7 +1,8 @@
 main {
   background: url("../images/We-run-all-your-marketing.jpg");
+   background-repeat: no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
+
   /* background-position-y: -220px; */
   /* change this to around -358px for mobile */
   /* background-position-x: -158px; */

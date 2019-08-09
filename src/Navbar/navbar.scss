@@ -1,0 +1,28 @@
+li {
+  list-style-type: none;
+}
+
+.logo {
+  margin-bottom: -4em;
+   margin-top: -4em;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.MuiToolbar-root {
+  justify-content: space-between !important;
+}
+
+
+
+@media screen and (min-width: 958px){
+  .menu {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 958px){
+  .desktop {
+    display: none !important;
+  }
+}

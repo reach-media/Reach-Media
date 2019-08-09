@@ -1,22 +1,27 @@
 import React from "react";
 import clsx from "clsx";
+import "./navbar.scss";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-import { Drawer, AppBar, Toolbar } from "@material-ui/core";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import List from "@material-ui/core/List";
-import Typography from "@material-ui/core/Typography";
-import Divider from "@material-ui/core/Divider";
-import IconButton from "@material-ui/core/IconButton";
+import {
+  Drawer,
+  AppBar,
+  Toolbar,
+  CssBaseline,
+  List,
+  Divider,
+  IconButton
+} from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import MailIcon from "@material-ui/icons/Mail";
+import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
-
+import {
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
+} from "reactstrap";
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
@@ -35,10 +40,19 @@ const useStyles = makeStyles(theme => ({
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen
     }),
+
     marginRight: drawerWidth
   },
+  menu: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "rgba(0,0,0,.6)",
+    textAlign: "left"
+  },
   title: {
-    flexGrow: 1
+    fontSize: 14,
+    fontWeight: "600",
+    color: "rgba(0,0,0,.6)"
   },
   hide: {
     display: "none"
@@ -55,7 +69,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: "center",
     padding: "0 8px",
     ...theme.mixins.toolbar,
-    justifyContent: "flex-start"
+    justifyContent: "space-between"
   },
   content: {
     flexGrow: 1,
@@ -99,17 +113,49 @@ export default function PersistentDrawerRight() {
         })}
       >
         <Toolbar>
-          <Typography variant="h6" noWrap className={classes.title}>
-            <img src={logo} alt="logo" />
-          </Typography>
+          <Link to="/">
+            <img src={logo} alt="logo" className="logo" />{" "}
+          </Link>
+
+          <Toolbar className="desktop">
+            <DropdownToggle nav className={classes.title} color="danger">
+              HOME
+            </DropdownToggle>
+            <DropdownToggle nav className={classes.title} color="danger">
+              WHO WE ARE
+            </DropdownToggle>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle
+                nav
+                caret
+                className={classes.title}
+                color="danger"
+              >
+                WHAT WE DO
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem>WEB DEVELOPMENT</DropdownItem>
+                <DropdownItem>MARKETING</DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            <DropdownToggle nav className={classes.title} color="danger">
+              OUR WORK
+            </DropdownToggle>
+            <DropdownToggle nav className={classes.title} color="danger">
+              BLOG
+            </DropdownToggle>
+            <DropdownToggle nav className={classes.title} color="danger">
+              CONTACT US
+            </DropdownToggle>
+          </Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="end"
             onClick={handleDrawerOpen}
-            className={clsx(open && classes.hide)}
+            className={`${clsx(open && classes.hide)} menu`}
           >
-            <MenuIcon />
+            <MenuIcon color="secondary" />
           </IconButton>
         </Toolbar>
       </AppBar>
@@ -133,25 +179,35 @@ export default function PersistentDrawerRight() {
         </div>
         <Divider />
         <List>
-          {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {["All mail", "Trash", "Spam"].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
+          <DropdownToggle nav className={classes.menu} color="danger">
+            HOME
+          </DropdownToggle>
+          <Divider />
+          <DropdownToggle nav className={classes.menu} color="danger">
+            WHO WE ARE
+          </DropdownToggle>
+          <Divider />
+          <UncontrolledDropdown nav inNavbar>
+            <DropdownToggle nav caret className={classes.menu} color="danger">
+              WHAT WE DO
+            </DropdownToggle>
+            <DropdownMenu>
+              <DropdownItem>WEB DEVELOPMENT</DropdownItem>
+              <DropdownItem>MARKETING</DropdownItem>
+            </DropdownMenu>
+          </UncontrolledDropdown>
+          <Divider />
+          <DropdownToggle nav className={classes.menu} color="danger">
+            OUR WORK
+          </DropdownToggle>
+          <Divider />
+          <DropdownToggle nav className={classes.menu} color="danger">
+            BLOG
+          </DropdownToggle>
+          <Divider />
+          <DropdownToggle nav className={classes.menu} color="danger">
+            CONTACT US
+          </DropdownToggle>
         </List>
       </Drawer>
     </div>

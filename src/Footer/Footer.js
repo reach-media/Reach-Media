@@ -1,5 +1,8 @@
 import React from 'react'
 import './footer.scss'
+import Subscribe from './Subscribe'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faFacebookF, faTwitter,faInstagram, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer(){
     return (
@@ -7,11 +10,36 @@ export default function Footer(){
             <section>
                 <h3>TALK TO US</h3>
                 <p>801-123-1234</p>
+                <p>reachmedia@gmail.com</p>
+            </section>
+             <section>
+                <h3>KEEP UP WITH REACH MEDIA</h3>
+                 <Subscribe/>
+
             </section>
             <section className='social'>
-                <div>
-                    <title>Hit</title>
+                <div className='social'>
+                <p>Copyright &#169; {new Date().getFullYear()} </p>
+                <p>Reach Media </p>
+                <p className='pipe'>&#x7c;</p>
+                <p>Terms and Conditions</p>
+                <p className='pipe'>&#x7c;</p>
+                <p>Privacy Policy</p>
                 </div>
+
+                     <a href="https://www.facebook.com/socialcornerdfw/?__tn__=%2Cd%2CP-R&eid=ARAi246OzIX-pm7QntKJxiF_dVJUsWfD3PoN_bGzBdBrlUUysCbK1YV-MLXywoPJGzyeccrkbYZQtV5L" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFacebookF} size="2x"/>
+
+        </a>
+                 <a href="https://www.instagram.com/socialcornerdfw/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faTwitter} size="2x"/>
+        </a>
+            <a href="https://www.instagram.com/socialcornerdfw/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} size="2x"/>
+        </a>
+                 <a href="https://www.instagram.com/socialcornerdfw/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedinIn} size="2x"/>
+        </a>
             </section>
         </footer>
     )

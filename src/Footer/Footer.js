@@ -10,7 +10,7 @@ export default function Footer(){
             </section>
             <section className='social'>
                 <div>
-                    hit
+                    <title>Hit</title>
                 </div>
             </section>
         </footer>

@@ -138,9 +138,9 @@ export default function PersistentDrawerRight() {
                 <DropdownItem>MARKETING</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-          <Link to='/ourwork'>  <DropdownToggle nav className={classes.title} color="danger">
-              OUR WORK
-          </DropdownToggle></Link>
+           <DropdownToggle nav className={classes.title} color="danger">
+            <Link to='/ourwork'>   OUR WORK</Link>
+          </DropdownToggle>
             <DropdownToggle nav className={classes.title} color="danger">
               BLOG
             </DropdownToggle>

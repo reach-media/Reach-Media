@@ -8,6 +8,11 @@ export default function Footer(){
                 <h3>TALK TO US</h3>
                 <p>801-123-1234</p>
             </section>
+            <section className='social'>
+                <div>
+                    <title>Hit</title>
+                </div>
+            </section>
         </footer>
     )
 }

@@ -1,6 +1,47 @@
 .footer {
-  height: 5em;
+  height: 10em;
   width: 100%;
   background: #222222;
   color: white;
+  .social {
+    background: #171717;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 4;
+    flex-wrap: wrap;
+    .content {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      align-items: flex-end;
+      font-size: 19px;
+      line-height: 34.2px;
+      letter-spacing: normal;
+      flex-wrap: wrap;
+      .large {
+        color: #666666;
+        font-weight: 600;
+      }
+      .pipe {
+        color: #666666;
+        transform: scale(1.4);
+        padding-left: .5em;
+        padding-right: .5em;
+      }
+    }
+    .icons {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      flex-wrap: wrap;
+      a {
+        padding-left: 2em;
+      }
+    }
+  }
+  a {
+    color: white;
+  }
 }

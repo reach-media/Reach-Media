@@ -7,9 +7,9 @@ import Main from "./Main/Main";
 
 export default (
   <Switch>
-
+ <Route exact path="/" component={Main} />
     <Route path='/ourwork' component={Ourwork}/>
     <Route path='/blog'/>
-    <Route exact path="/" component={Main} />
+
   </Switch>
 );

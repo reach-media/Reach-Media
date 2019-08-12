@@ -142,7 +142,7 @@ export default function PersistentDrawerRight() {
             <Link to='/ourwork'>   OUR WORK</Link>
           </DropdownToggle>
             <DropdownToggle nav className={classes.title} color="danger">
-              BLOG
+              <Link to='/blog'> BLOG </Link>
             </DropdownToggle>
             <DropdownToggle nav className={classes.title} color="danger">
               CONTACT US

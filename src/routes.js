@@ -9,7 +9,7 @@ export default (
   <Switch>
     <Route exact path="/" component={Main} />
     <Route path='/ourwork' component={Ourwork}/>
-    <Route path='/blog'/>
+    <Route path='/blog' component={Blog}/>
 
   </Switch>
 );

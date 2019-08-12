@@ -27,7 +27,12 @@ export default function OurWork() {
                 <Fab variant="extended" aria-label="delete" className={classes.fab} color='secondary' size='large'>
         BOOK A COFFEE MEET-N-GREET
       </Fab>
+
             </section>
+            <section>
+                    <h1 id="connect">LET'S CONNECT!</h1>
+                </section>
+
 
     </article>
     )

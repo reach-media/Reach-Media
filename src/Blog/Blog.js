@@ -2,8 +2,7 @@ import React from 'react'
 import './blog.scss'
 import Fab from "@material-ui/core/Fab";
 import {makeStyles} from "@material-ui/core";
-import Button from "reactstrap/es/Button";
-import SocialCornerLogo from '../assets/socialcornerlogo.png'
+
 
 
 
@@ -27,40 +26,16 @@ export default function Blog() {
     const classes = useStyles();
     return (
         <article>
-            <section id='showme'>
-                 <h2 id='goods'>Show me the goods!</h2>
-                <p className='favorite'>You made it to our favorite page! Feel free to browse through some of our best work below.</p>
+            <section id='marketing'>
+                 <h2 id='goods'>Eager to learn about marketing?</h2>
+                 <h2 id='goods'>Read our blog!</h2>
+                <p className='favorite'>We love to teach you about the latest in web design, digital marketing, and more!</p>
                 <Fab variant="extended" aria-label="delete" className={classes.fab} color='secondary' size='large'>
         BOOK A COFFEE MEET-N-GREET
       </Fab>
 
 
             </section>
-            <section className='projectsCont'>
-                    <div className='socialCorner'>
-                        <img src={SocialCornerLogo} alt='socialcornerproject' height={150}/>
-                        <Button>Hit</Button>
-                    </div>
-
-                <div className='socialCorner'>
-                        <img src={SocialCornerLogo} alt='socialcornerproject' height={150}/>
-                        <Button>Hit</Button>
-                    </div>
-
-                <div className='socialCorner'>
-                        <img src={SocialCornerLogo} alt='socialcornerproject' height={150}/>
-                        <Button>Hit</Button>
-                    </div>
-
-                 <div className='socialCorner'>
-                        <img src={SocialCornerLogo} alt='socialcornerproject' height={150}/>
-                        <Button>Hit</Button>
-                    </div>
-
-
-
-                </section>
-  <h1 id="connect">LET'S CONNECT!</h1>
 
 
     </article>

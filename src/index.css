@@ -8,6 +8,16 @@ body {
   overflow-x: hidden;
 }
 
+/*.active:active {*/
+/*  color: red;*/
+/*}*/
+/*.focus:focus {*/
+/*  color: red;*/
+/*}*/
+/*:target {*/
+/*  color: red;*/
+/*}*/
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

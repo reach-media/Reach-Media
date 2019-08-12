@@ -14,7 +14,13 @@ import MailOutline from  "@material-ui/icons/MailOutline";
 
 const useStyles = makeStyles(theme => ({
   fab: {
-    margin: theme.spacing(1)
+    margin: theme.spacing(1),
+     fontFamily: 'Helvetica, Arial, Lucida, sans-serif',
+      fontSize: '14px',
+      letterSpacing: '2px',
+      lineHeight: '23.8px',
+      textAlign: 'center',
+      backgroundColor: '#e2231a'
   },
   extendedIcon: {
     marginRight: theme.spacing(1)

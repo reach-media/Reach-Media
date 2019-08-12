@@ -10,4 +10,22 @@
   align-items: center;
   justify-content: flex-end;
   padding-bottom: 7em;
+
+  #goods {
+    font-family: "Asap", sans-serif;
+  font-size: 50px;
+  letter-spacing: 1px;
+  line-height: 70px;
+  text-align: center;
+  color: #333333;
+  }
+
+  .favorite {
+    font-family: "open sans", Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: normal;
+    line-height: 36px;
+    color: #666666;
+  }
 }

@@ -2,6 +2,12 @@ import React from 'react'
 import './ourWork.scss'
 import Fab from "@material-ui/core/Fab";
 import {makeStyles} from "@material-ui/core";
+import Button from "reactstrap/es/Button";
+import SocialCornerLogo from '../assets/socialcornerlogo.png'
+
+
+
+
 const useStyles = makeStyles(theme => ({
   fab: {
     margin: theme.spacing(1),
@@ -27,15 +33,16 @@ export default function OurWork() {
                 <Fab variant="extended" aria-label="delete" className={classes.fab} color='secondary' size='large'>
         BOOK A COFFEE MEET-N-GREET
       </Fab>
-                <section className='projectsCont'>
-                    <div className='socialcorner'>
-                        <img src=''/>
 
+
+            </section>
+            <section className='projectsCont'>
+                    <div className='socialCorner'>
+                        <img src={SocialCornerLogo} alt='socialcornerproject'/>
+                        <Button>Hit</Button>
                     </div>
                     <h1 id="connect">LET'S CONNECT!</h1>
                 </section>
-
-            </section>
 
 
 

@@ -2,7 +2,7 @@ import React from "react";
 import "./ChooseUs.css";
 
 //files
-import B2B from "../images/B2B-View-Case-Studies.png";
+import B2B from "../assets/B2B-View-Case-Studies.png";
 export default function ChooseUs() {
   return (
     <div id="partner">

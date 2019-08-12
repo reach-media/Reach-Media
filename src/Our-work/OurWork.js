@@ -38,12 +38,29 @@ export default function OurWork() {
             </section>
             <section className='projectsCont'>
                     <div className='socialCorner'>
-                        <img src={SocialCornerLogo} alt='socialcornerproject'/>
+                        <img src={SocialCornerLogo} alt='socialcornerproject' height={150}/>
                         <Button>Hit</Button>
                     </div>
-                    <h1 id="connect">LET'S CONNECT!</h1>
-                </section>
 
+                <div className='socialCorner'>
+                        <img src={SocialCornerLogo} alt='socialcornerproject' height={150}/>
+                        <Button>Hit</Button>
+                    </div>
+
+                <div className='socialCorner'>
+                        <img src={SocialCornerLogo} alt='socialcornerproject' height={150}/>
+                        <Button>Hit</Button>
+                    </div>
+
+                 <div className='socialCorner'>
+                        <img src={SocialCornerLogo} alt='socialcornerproject' height={150}/>
+                        <Button>Hit</Button>
+                    </div>
+
+
+
+                </section>
+  <h1 id="connect">LET'S CONNECT!</h1>
 
 
     </article>

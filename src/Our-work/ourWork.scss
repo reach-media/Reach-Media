@@ -32,12 +32,16 @@
 
 .projectsCont {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   .socialCorner {
-    background: red;
+    background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url("../assets/socialcorner.jpg");
+    background-size: cover;
+    width: 474px;
+    height: 420px;
     display: flex;
   flex-direction: column;
     align-items: center;
+    justify-content: center;
 
   }
 

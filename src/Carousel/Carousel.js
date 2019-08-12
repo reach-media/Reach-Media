@@ -1,14 +1,14 @@
 import React from "react";
 import Slider from "react-slick";
 import "./Carousel.css";
-import Quote from "../images/red_quote.jpg";
-import Quote2 from "../images/red_quote2.jpg";
-import Quote3 from "../images/red_quote3.jpg";
+import Quote from "../assets/red_quote.jpg";
+import Quote2 from "../assets/red_quote2.jpg";
+import Quote3 from "../assets/red_quote3.jpg";
 //Testimony pictures
-import Lady from "../images/testimonial-photo.png";
-import Work from "../images/portfolio-advice-present-future-work-620.jpg";
-import Mark from "../images/profile-marc-1.jpg";
-import Work2 from "../images/BBVACompass-Laptop_April_2017-1024x589.jpg";
+import Lady from "../assets/testimonial-photo.png";
+import Work from "../assets/portfolio-advice-present-future-work-620.jpg";
+import Mark from "../assets/profile-marc-1.jpg";
+import Work2 from "../assets/BBVACompass-Laptop_April_2017-1024x589.jpg";
 class SimpleSlider extends React.Component {
   render() {
     var settings = {

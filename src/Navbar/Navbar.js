@@ -145,7 +145,7 @@ export default function PersistentDrawerRight() {
               <Link to='/blog'> BLOG </Link>
             </DropdownToggle>
             <DropdownToggle nav className={classes.title} color="danger">
-              CONTACT US
+              <Link to='contactus'>CONTACT US</Link>
             </DropdownToggle>
           </Toolbar>
           <IconButton

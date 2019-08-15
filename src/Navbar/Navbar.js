@@ -119,7 +119,7 @@ export default function PersistentDrawerRight() {
 
           <Toolbar className="desktop">
             <DropdownToggle nav className={classes.title} color="danger">
-              HOME
+              <Link to="/"> Home</Link>
             </DropdownToggle>
             <DropdownToggle nav className={classes.title} color="danger">
               <Link to="/whoWeAre"> WHO WE ARE</Link>
@@ -138,14 +138,14 @@ export default function PersistentDrawerRight() {
                 <DropdownItem>MARKETING</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-           <DropdownToggle nav className={classes.title} color="danger">
-            <Link to='/ourwork'>   OUR WORK</Link>
-          </DropdownToggle>
             <DropdownToggle nav className={classes.title} color="danger">
-              <Link to='/blog'> BLOG </Link>
+              <Link to="/ourwork"> OUR WORK</Link>
             </DropdownToggle>
             <DropdownToggle nav className={classes.title} color="danger">
-              <Link to='contactus'>CONTACT US</Link>
+              <Link to="/blog"> BLOG </Link>
+            </DropdownToggle>
+            <DropdownToggle nav className={classes.title} color="danger">
+              <Link to="contactus">CONTACT US</Link>
             </DropdownToggle>
           </Toolbar>
           <IconButton

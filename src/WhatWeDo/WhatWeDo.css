@@ -1,0 +1,28 @@
+#what {
+  margin-top: 8vh;
+  /* background: url("../assets/alex-iby-HfR0W6HW_Cw-unsplash.jpg"); */
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #666666 100%),
+    url("../../src/assets/alex-iby-HfR0W6HW_Cw-unsplash.jpg");
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #e2231a;
+}
+
+#what_we_do {
+  width: 60%;
+}
+#what_we_do h1 {
+  text-align: center;
+  font-family: "Asap", sans-serif;
+  font-size: 85px;
+  letter-spacing: 1px;
+  line-height: 119px;
+  margin-top: 5vh;
+  color: #e2231a;
+}

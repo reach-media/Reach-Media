@@ -1,5 +1,6 @@
 import React from "react";
 import "./ChooseUs.css";
+import { Link } from "react-router-dom";
 
 //files
 import B2B from "../assets/B2B-View-Case-Studies.png";
@@ -56,7 +57,9 @@ export default function ChooseUs() {
           </p>
         </div>
       </div>
-      <h1 id="connect">LET'S CONNECT!</h1>
+      <Link to="/contactus">
+        <h1 id="connect">LET'S CONNECT!</h1>
+      </Link>
     </div>
   );
 }

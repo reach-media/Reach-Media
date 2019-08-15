@@ -124,7 +124,10 @@ export default function PersistentDrawerRight() {
             <DropdownToggle nav className={classes.title} color="danger">
               <Link to="/whoWeAre"> WHO WE ARE</Link>
             </DropdownToggle>
-            <UncontrolledDropdown nav inNavbar>
+            <DropdownToggle nav className={classes.title} color="danger">
+              <Link to="/WhatWeDo"> What We Do</Link>
+            </DropdownToggle>
+            {/* <UncontrolledDropdown nav inNavbar>
               <DropdownToggle
                 nav
                 caret
@@ -137,7 +140,7 @@ export default function PersistentDrawerRight() {
                 <DropdownItem>WEB DEVELOPMENT</DropdownItem>
                 <DropdownItem>MARKETING</DropdownItem>
               </DropdownMenu>
-            </UncontrolledDropdown>
+            </UncontrolledDropdown> */}
             <DropdownToggle nav className={classes.title} color="danger">
               <Link to="/ourwork"> OUR WORK</Link>
             </DropdownToggle>

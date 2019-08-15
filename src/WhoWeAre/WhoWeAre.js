@@ -56,6 +56,7 @@ export default function WhoWeAre() {
         <div id="our_story">
           <img src={Us} alt="" />
           <h2>Learn About Our Story</h2>
+
           <Expansion />
         </div>
         <div id="we_love_whatWeDo">

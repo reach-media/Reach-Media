@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./WhoWeAre.css";
 import { makeStyles } from "@material-ui/core/styles";
 import MailOutline from "@material-ui/icons/MailOutline";
 import Fab from "@material-ui/core/Fab";
-
+import Expansion from "../Expansion/Expansion";
 import Us from "../assets/fatos-bytyqi-Agx5_TLsIf4-unsplash.jpg";
 
 const useStyles = makeStyles(theme => ({
@@ -23,6 +23,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function WhoWeAre() {
   const classes = useStyles();
+  const [expand, setExpand] = useState(false);
 
   return (
     <div>
@@ -52,15 +53,7 @@ export default function WhoWeAre() {
         <div id="our_story">
           <img src={Us} alt="" />
           <h2>Learn About Our Story</h2>
-          <Fab
-            variant="extended"
-            aria-label="delete"
-            className={classes.fab}
-            color="secondary"
-          >
-            <MailOutline className={classes.extendedIcon} />
-            What Inspired Us
-          </Fab>
+          <Expansion />
         </div>
         <div id="we_love_whatWeDo">
           <img src={Us} alt="" />
@@ -92,6 +85,7 @@ export default function WhoWeAre() {
 
         <div />
       </div>
+      {/* {expand ? <Expansion /> : <div>Hi</div>} */}
     </div>
   );
 }

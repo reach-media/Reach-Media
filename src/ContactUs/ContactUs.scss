@@ -1,10 +1,17 @@
+%h3-shared{
+  font-family: 'Asap',sans-serif!important;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  font-size: 22px;
+}
+
 #contact-main{
-    margin-top: 50px;
+    margin-top: 65px;
 }
 
 #first-section{
     border: 1px solid red;
-    height: 95vh;
+    height: 60vh;
     background-image: linear-gradient(180deg,rgba(255,255,255,0.5) 0%,#ffffff 100%),url(https://www.boralagency.com/wp-content/uploads/2019/04/Contact-Boral-Agency.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -15,41 +22,37 @@
 
 }
 #first-section h1 {
-    margin-top: 200px;
-    font-family: 'Asap',sans-serif!important;
+    font-family: "Asap", sans-serif;
     font-size: 50px;
-    line-height: 1.4em;
+    letter-spacing: 1px;
+    line-height: 70px;
+    text-align: center;
+    color: #333333;
 }
 
 #first-section h3 {
-    font-family: 'Asap',sans-serif!important;
-    letter-spacing: 1px;
-    line-height: 1.4em;
-    font-size: 22px;
+    @extend %h3-shared
 }
 
 #second-section{
     border: 1px solid blue;
+    height: 30vh;
 }
 
 #second-section h3{
-    font-family: 'Asap',sans-serif!important;
-    letter-spacing: 1px;
-    line-height: 1.4em;
-    font-size: 22px;
-    margin-top: 22px;
+   @extend %h3-shared;
+   margin-top: 22px;
 }
 
 #second-section button {
-    margin: 30px 0;
-    color: #ffffff!important;
-    border-color: rgba(0,0,0,0);
-    border-radius: 100px;
-    letter-spacing: 2px;
+    font-family: Helvetica, Arial, Lucida, sans-serif;
     font-size: 14px;
-    font-family: 'Asap',Helvetica,Arial,Lucida,sans-serif!important;
-    text-transform: uppercase!important;
+    letter-spacing: 4px;
+    line-height: 23.8px;
+    text-align: center;
     background-color: #e2231a;
+    margin-top:30px;
+    outline: none;
 }
 
 #third-section{

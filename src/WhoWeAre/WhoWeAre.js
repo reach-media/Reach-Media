@@ -4,6 +4,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import MailOutline from "@material-ui/icons/MailOutline";
 import Fab from "@material-ui/core/Fab";
 import Expansion from "../Expansion/Expansion";
+import VisionExpansion from "../Expansion/VisionExpansion";
+import LoveExpansion from "../Expansion/LoveExpansion";
+
 import Us from "../assets/fatos-bytyqi-Agx5_TLsIf4-unsplash.jpg";
 
 const useStyles = makeStyles(theme => ({
@@ -58,29 +61,12 @@ export default function WhoWeAre() {
         <div id="we_love_whatWeDo">
           <img src={Us} alt="" />
           <h2>We Love What We Do</h2>
-          <Fab
-            id="fab"
-            variant="extended"
-            aria-label="delete"
-            className={classes.fab}
-            color="secondary"
-          >
-            <MailOutline className={classes.extendedIcon} />
-            What Inspired Us
-          </Fab>
+          <LoveExpansion />
         </div>
         <div id="our_vision">
           <img src={Us} alt="" />
           <h2>Our Vision</h2>
-          <Fab
-            variant="extended"
-            aria-label="delete"
-            className={classes.fab}
-            color="secondary"
-          >
-            <MailOutline className={classes.extendedIcon} />
-            Learn More
-          </Fab>
+          <VisionExpansion />
         </div>
 
         <div />

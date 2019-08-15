@@ -72,7 +72,7 @@ class Contact extends Component {
                 </div>
                 <div id="second-section">
                     <h3>
-                        Get started by filling out the form below. We' ll get bacj tou you in 24 hrs or less!
+                        Get started by filling out the form below. We' ll get back tou you in 24 hrs or less!
                     </h3>
                     <h3><strong>- or -</strong></h3>
                     <Fab variant="extended" aria-label="delete" color='secondary' >
@@ -140,7 +140,7 @@ class Contact extends Component {
                         {error ? <div className="alert alert-danger" role="alert">Oppps! Something went wrong</div>
                             : null}
 
-                        <button type="submit" class="btn btn-danger">Submit</button>
+                        <Fab type="submit" variant="extended" aria-label="delete" color='secondary'>Submit</Fab>
                         {/* name = "checkbox" value ={checkbox} onClick = {this.handleClick} */}
                     </form>
                 </div>

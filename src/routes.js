@@ -1,14 +1,29 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
+<<<<<<< HEAD
 import Ourwork from './Our-work/OurWork'
 import Blog from "./Blog/Blog"
+=======
+import Ourwork from "./Our-work/OurWork";
+import Blog from "./Blog/Blog";
+>>>>>>> master
 import Main from "./Main/Main";
+import WhoWeAre from "./WhoWeAre/WhoWeAre";
+import Contact from "./ContactUs/ContactUs"
+import Error from "./Error/Error"
+
 
 export default (
   <Switch>
     <Route exact path="/" component={Main} />
-    <Route path='/ourwork' component={Ourwork}/>
-    <Route path='/blog' component={Blog}/>
+
+    <Route path="/whoWeAre" component={WhoWeAre} />
+   
+
+    <Route exact path='/ourwork' component={Ourwork}/>
+    <Route exact path='/blog' component={Blog}/>
+    <Route exact path = "/contactus" component = {Contact}/>
+    <Route path = "/error" component = {Error} />
 
   </Switch>
 );

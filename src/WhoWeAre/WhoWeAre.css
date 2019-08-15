@@ -1,0 +1,76 @@
+#WhoWeAre_background {
+  margin-top: 10vh;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #ffffff 100%),
+    url("../../src/assets/campaign-creators-gMsnXqILjp4-unsplash.jpg");
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#fully_service_statement {
+  width: 80vw;
+  margin: 0 auto;
+  font-family: "Asap", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 70px;
+  text-align: center;
+  color: #333333;
+  margin-top: -15%;
+}
+#fully_service_statement span {
+  color: red;
+}
+.free {
+  margin: 30px 0;
+  color: #ffffff !important;
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 100px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-family: "Asap", Helvetica, Arial, Lucida, sans-serif !important;
+  text-transform: uppercase !important;
+  background-color: #e2231a;
+}
+#WhoWeAre_background p {
+  width: 80vw;
+  margin: 0 auto;
+  font-family: "Open sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: center;
+  color: #333333;
+}
+#all_about_us {
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+}
+#our_story,
+#our_vision {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#we_love_whatWeDo {
+  color: white;
+  height: 100%;
+  width: 30%;
+  background: #e2231a;
+}
+#all_about_us img,
+#our_vision img {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+}
+#fab {
+  border: 2px solid pink;
+}

@@ -119,10 +119,10 @@ export default function PersistentDrawerRight() {
 
           <Toolbar className="desktop">
             <DropdownToggle nav className={classes.title} color="danger">
-              HOME
+              <Link to="/"> Home</Link>
             </DropdownToggle>
             <DropdownToggle nav className={classes.title} color="danger">
-              WHO WE ARE
+              <Link to="/whoWeAre"> WHO WE ARE</Link>
             </DropdownToggle>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle
@@ -138,14 +138,14 @@ export default function PersistentDrawerRight() {
                 <DropdownItem>MARKETING</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-           <DropdownToggle nav className={classes.title} color="danger">
-            <Link to='/ourwork'>   OUR WORK</Link>
-          </DropdownToggle>
             <DropdownToggle nav className={classes.title} color="danger">
-              <Link to='/blog'> BLOG </Link>
+              <Link to="/ourwork"> OUR WORK</Link>
             </DropdownToggle>
             <DropdownToggle nav className={classes.title} color="danger">
-              CONTACT US
+              <Link to="/blog"> BLOG </Link>
+            </DropdownToggle>
+            <DropdownToggle nav className={classes.title} color="danger">
+              <Link to="contactus">CONTACT US</Link>
             </DropdownToggle>
           </Toolbar>
           <IconButton
@@ -184,7 +184,7 @@ export default function PersistentDrawerRight() {
           </DropdownToggle>
           <Divider />
           <DropdownToggle nav className={classes.menu} color="danger">
-            WHO WE ARE
+            <Link to="/whoWeAre"> WHO WE ARE</Link>
           </DropdownToggle>
           <Divider />
           <UncontrolledDropdown nav inNavbar>

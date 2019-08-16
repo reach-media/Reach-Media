@@ -1,12 +1,8 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-<<<<<<< HEAD
-import Ourwork from './Our-work/OurWork'
-import Blog from "./Blog/Blog"
-=======
+
 import Ourwork from "./Our-work/OurWork";
 import Blog from "./Blog/Blog";
->>>>>>> master
 import Main from "./Main/Main";
 import WhoWeAre from "./WhoWeAre/WhoWeAre";
 import Contact from "./ContactUs/ContactUs"

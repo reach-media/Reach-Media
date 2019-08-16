@@ -37,13 +37,13 @@ export default function Footer() {
           <p className="large">Privacy Policy</p>
         </div>
         <div className="icons">
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/reachmediawin/?eid=ARB8I2huo0LAQAOiuJc5tbgl-dtAKO0T3FVDYuwnlNRnHlIadFrJyY3G6TC4ihQCMWy8lBiwLsOxbmlr" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebookF} size="2x" />
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faTwitter} size="2x" />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/reachmediawin/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} size="2x" />
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer">

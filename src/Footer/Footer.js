@@ -40,13 +40,13 @@ export default function Footer() {
           <a href="https://www.facebook.com/reachmediawin/?eid=ARB8I2huo0LAQAOiuJc5tbgl-dtAKO0T3FVDYuwnlNRnHlIadFrJyY3G6TC4ihQCMWy8lBiwLsOxbmlr" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebookF} size="2x" />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="https://twitter.com/ReachMedia3" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faTwitter} size="2x" />
           </a>
           <a href="https://www.instagram.com/reachmediawin/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} size="2x" />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/reach-media-691428191/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
           </a>
         </div>

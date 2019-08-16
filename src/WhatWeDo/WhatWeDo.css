@@ -26,3 +26,35 @@
   margin-top: 5vh;
   color: #e2231a;
 }
+.technique {
+  margin: 0 auto;
+  width: 85vw;
+  display: flex;
+}
+.word_side,
+.picture_side {
+  width: 50%;
+}
+.picture_side img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+.technique_description {
+  font-family: "Asap", sans-serif;
+  font-size: 50px;
+  letter-spacing: 1px;
+  line-height: 65px;
+  text-align: left;
+  color: #333333;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+.word_side p {
+  /* font-family: Lato, */
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 53.2px;
+  text-align: left;
+  color: #666666;
+}

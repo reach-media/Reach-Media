@@ -23,7 +23,7 @@ export default function WhatWeDo() {
             iusto possimus a consectetur sunt!
           </p>
           <Link to="/contactus">
-            <button>Work With Us</button>
+            <h3>Work With Us</h3>
           </Link>
         </div>
         <div className="picture_side">
@@ -31,8 +31,11 @@ export default function WhatWeDo() {
         </div>
       </div>
       <div className="technique">
+        <div className="picture_side">
+          <img src={Pic} alt="" />
+        </div>
         <div className="word_side">
-          <h1 className="technique_description">hello</h1>
+          <h1 className="technique_description">Design And Development</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
             cupiditate veritatis, facilis incidunt, debitis minus aperiam, nulla
@@ -40,16 +43,13 @@ export default function WhatWeDo() {
             iusto possimus a consectetur sunt!
           </p>
           <Link to="/contactus">
-            <button>Work With Us</button>
+            <h3>Work With Us</h3>
           </Link>
-        </div>
-        <div className="picture_side">
-          <img src={Pic} alt="" />
         </div>
       </div>
       <div className="technique">
         <div className="word_side">
-          <h1 className="technique_description">DisCover And Research</h1>
+          <h1 className="technique_description">Testing And Launch</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
             cupiditate veritatis, facilis incidunt, debitis minus aperiam, nulla
@@ -57,7 +57,7 @@ export default function WhatWeDo() {
             iusto possimus a consectetur sunt!
           </p>
           <Link to="/contactus">
-            <button>Work With Us</button>
+            <h3>Work With Us</h3>
           </Link>
         </div>
         <div className="picture_side">

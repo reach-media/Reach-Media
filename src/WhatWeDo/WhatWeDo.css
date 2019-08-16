@@ -35,6 +35,14 @@
 .picture_side {
   width: 50%;
 }
+.word_side {
+  padding: 2vh;
+}
+.picture_side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .picture_side img {
   width: 200px;
   height: 200px;
@@ -57,4 +65,18 @@
   line-height: 53.2px;
   text-align: left;
   color: #666666;
+}
+.word_side h3 {
+  font-family: "Open sans", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 34px;
+  color: #e2231a;
+  height: 50px;
+  border: 2px solid #e2231a;
+  padding: 6px 20px;
+  display: inline;
+}
+.word_side a:hover {
+  text-decoration-line: none;
 }

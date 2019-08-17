@@ -40,7 +40,7 @@
   display: flex;
   margin: 0 auto;
   margin-top: 7vh;
-  width: 75vw;
+  /* width: 75vw; */
   justify-content: space-around;
 }
 .why_us {
@@ -114,4 +114,29 @@
   100% {
     color: red;
   }
+}
+/* MEDIA QUERIES */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #facts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .first_andthird_statements,
+  .second_andfourth_statements {
+    width: 40%;
+    margin: 1vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

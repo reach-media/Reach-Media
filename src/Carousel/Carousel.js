@@ -33,7 +33,8 @@ class SimpleSlider extends React.Component {
               </span>
               Partnership with ReachMedia has been the best decision for my
               business. From start to finish, they were diligent in creating a
-              beautiful website for us.
+              beautiful website for us. <br />
+              --Jane P.--
             </p>
             <img src={Work} alt="" />
           </div>
@@ -46,7 +47,8 @@ class SimpleSlider extends React.Component {
                 <img src={Quote} alt="" />
               </span>
               With their top-notch software and digital marketing strategies, my
-              law firm grew unprecedentally and my website is now.
+              law firm grew unprecedentally and my website is now. <br />
+              --Mark F.--
             </p>
             <img src={Work2} alt="" />
           </div>

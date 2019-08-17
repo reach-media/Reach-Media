@@ -99,3 +99,63 @@ main p {
   border-radius: 50%;
   color: coral;
 }
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 500px) {
+  main {
+    background: url("../assets/We-run-all-your-marketing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 70vh;
+    background-position-x: -100px;
+    /* border-radius: 0 0 85% 85% / 30%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #my_services {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .service h4 {
+    align-items: flex-start;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 26.4px;
+    color: #858587;
+  }
+  main p {
+    margin-top: 10vh;
+    font-family: "Asap Bold", Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 33.6px;
+    color: #ffffff;
+    word-wrap: break-word;
+    /* width: 60%; */
+    /* text-align: right; */
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #my_services {
+    /* width: 100%; */
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

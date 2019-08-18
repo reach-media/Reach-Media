@@ -46,29 +46,19 @@
 /* MEDIA QUERIES */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .slick-list {
-    width: 91vw;
+  .items {
+    flex-direction: column;
+  }
+  .carousel_items img {
+    object-fit: contain;
+    width: 50%;
+    border-radius: 50%;
   }
   .slick-prev {
-    left: 2px;
+    left: -170px;
+    display: none;
   }
   .slick-next {
-    right: 7px;
+    right: -170px;
   }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
 }

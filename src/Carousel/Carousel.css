@@ -40,7 +40,7 @@
   font-size: 22px;
   font-weight: 500;
   letter-spacing: 1px;
-  line-height: 26.4px;
+  line-height: 46.4px;
   color: #858587;
 }
 /* MEDIA QUERIES */
@@ -49,9 +49,12 @@
   .items {
     flex-direction: column;
   }
+  .items p {
+    line-height: 33px;
+  }
   .carousel_items img {
     object-fit: contain;
-    width: 50%;
+    width: 60%;
     border-radius: 50%;
   }
   .slick-prev {
@@ -60,5 +63,8 @@
   }
   .slick-next {
     right: -170px;
+  }
+  .second_pic {
+    align-self: flex-end;
   }
 }

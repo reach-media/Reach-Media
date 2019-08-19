@@ -128,7 +128,7 @@
     margin: 0 auto;
   }
   .why_partner_withUs {
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
@@ -137,5 +137,9 @@
   #why_us_pic,
   #why_us_pic2 {
     width: 100%;
+  }
+  .first_andthird_statements,
+  .second_andfourth_statements {
+    width: 90%;
   }
 }

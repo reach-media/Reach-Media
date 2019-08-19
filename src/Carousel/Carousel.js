@@ -36,7 +36,7 @@ class SimpleSlider extends React.Component {
               beautiful website for us. <br />
               --Jane P.--
             </p>
-            <img src={Work} alt="" />
+            <img src={Work} alt="" className="second_pic" />
           </div>
         </div>
         <div className="carousel_items">
@@ -50,7 +50,7 @@ class SimpleSlider extends React.Component {
               law firm grew unprecedentally and my website is now. <br />
               --Mark F.--
             </p>
-            <img src={Work2} alt="" />
+            <img src={Work2} alt="" className="second_pic" />
           </div>
         </div>
         {/* <div>

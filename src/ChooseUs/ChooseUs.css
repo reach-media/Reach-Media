@@ -1,6 +1,7 @@
 #facts {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   width: 90vw;
   margin: 0 auto;
 }
@@ -141,5 +142,32 @@
   .first_andthird_statements,
   .second_andfourth_statements {
     width: 90%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .first_andthird_statements,
+  .second_andfourth_statements {
+    width: 45%;
+    margin: 1vw;
+  }
+  @media only screen and (min-width: 768px) {
+    #facts {
+      width: 100vw;
+      justify-content: center;
+      align-items: center;
+    }
+    .first_andthird_statements,
+    .second_andfourth_statements {
+      margin: 1vw;
+      width: 20%;
+      height: 20%;
+    }
+  }
+
+  @media only screen and (min-width: 718px) {
+    /* .first_andthird_statements,
+    .second_andfourth_statements {
+      width: 20%;
+    } */
   }
 }

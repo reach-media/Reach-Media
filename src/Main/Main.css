@@ -68,16 +68,18 @@ main p {
   margin-bottom: 4vh;
 }
 #business_statement {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
+  overflow-wrap: break-word;
 }
 #business_statement h1 {
   font-family: "Asap", sans-serif;
   color: #828282;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 63px;
+  /* text-align: left; */
 }
 .service h4 {
   align-items: flex-start;
@@ -101,7 +103,35 @@ main p {
 }
 /* MEDIA QUERIES */
 /* MEDIA QUERIES */
-
+@media only screen and (max-width: 768px) {
+  main {
+    width: 100vw;
+    /* background-position-x: -200px; */
+  }
+  main div {
+    width: 70%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  main p {
+    text-align: left;
+    font-size: 55px;
+    width: 100%;
+    line-height: 58.6px;
+  }
+  #business_statement {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  #business_statement h1 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 43px;
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 600px) {
   main {
     background: url("../assets/We-run-all-your-marketing.jpg");
@@ -148,8 +178,8 @@ main p {
     text-align: left;
   }
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 411px) {
+
+@media only screen and (max-width: 500px) {
   main {
     width: 100vw;
     background-position-x: -200px;
@@ -162,31 +192,44 @@ main p {
   }
   main p {
     text-align: left;
-    font-size: 33px;
+    font-size: 25px;
     line-height: 43.6px;
   }
 }
-
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   main {
     width: 100vw;
-    background-position-x: -150px;
+    background-position-x: -250px;
   }
   main p {
     text-align: left;
-    font-size: 35px;
+    font-size: 25px;
     width: 100%;
     line-height: 38.6px;
   }
 }
 
+/* Extra small devices (phones, 600px and down) */
+
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 800px) {
+  main p {
+    font-size: 55px;
+  }
 }
+@media only screen and (min-width: 992px) {
+  main {
+    width: 100vw;
+    background-position-x: -200px;
+  }
+  main div {
+    width: 70%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+} */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {

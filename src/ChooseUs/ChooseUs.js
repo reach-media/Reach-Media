@@ -1,7 +1,8 @@
 import React from "react";
 import "./ChooseUs.css";
 import { Link } from "react-router-dom";
-
+import WhyUsPic from "../../src/assets/newteam.jpg";
+import WhyUsPic2 from "../../src/assets/newmeetus2.jpg";
 //files
 import B2B from "../assets/B2B-View-Case-Studies.png";
 export default function ChooseUs() {
@@ -44,10 +45,11 @@ export default function ChooseUs() {
           {/* <br /> */}
           <p>Our goal is for you to run your business as easily as possible.</p>
         </div>
-        <div id="why_us_pic" />
+        <div id="why_us_pic">
+          <img src={WhyUsPic} alt="" />
+        </div>
       </div>
       <div className="why_partner_withUs">
-        <div id="why_us_pic2" />
         <div className="why_us">
           <h1>Meet With Us</h1>
           <p>
@@ -55,6 +57,10 @@ export default function ChooseUs() {
             customer tendencies, and overall vision to tailor a strategy just
             for your business or website.
           </p>
+        </div>
+        <div id="why_us_pic2">
+          {" "}
+          <img src={WhyUsPic2} alt="" />{" "}
         </div>
       </div>
       <Link to="/contactus">

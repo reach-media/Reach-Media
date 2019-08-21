@@ -46,6 +46,10 @@
 }
 .why_us {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .why_us,
 #why_us_pic,
@@ -84,7 +88,7 @@
 #why_us_pic:hover,
 #why_us_pic2:hover {
   opacity: 0.8;
-  width: 47%;
+  /* width: 47%; */
 }
 #connect {
   font-family: "Asap", sans-serif;
@@ -116,8 +120,35 @@
     color: red;
   }
 }
-/* MEDIA QUERIES */
 @media only screen and (max-width: 600px) {
+  .why_partner_withUs {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .why_us {
+    text-align: left;
+  }
+  .why_us,
+  #why_us_pic,
+  #why_us_pic2 {
+    width: 80%;
+    margin: 0 auto;
+    /* height: 300px; */
+  }
+  #why_us_pic img,
+  #why_us_pic2 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  /* #why_us_pic img:hover,
+  #why_us_pic2 img:hover {
+    display: block;
+  } */
+}
+/* MEDIA QUERIES */
+/* @media only screen and (max-width: 600px) {
   #facts {
     flex-direction: column;
     width: 100vw;
@@ -143,8 +174,8 @@
   .second_andfourth_statements {
     width: 90%;
   }
-}
-@media only screen and (min-width: 600px) {
+} */
+/* @media only screen and (min-width: 600px) {
   .first_andthird_statements,
   .second_andfourth_statements {
     width: 45%;
@@ -163,11 +194,4 @@
       height: 20%;
     }
   }
-
-  @media only screen and (min-width: 718px) {
-    /* .first_andthird_statements,
-    .second_andfourth_statements {
-      width: 20%;
-    } */
-  }
-}
+} */

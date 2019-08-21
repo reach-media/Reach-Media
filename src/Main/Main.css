@@ -24,14 +24,14 @@ main div {
 main p {
   margin-top: 10vh;
   font-family: "Asap Bold", Arial, Helvetica, sans-serif;
-  font-size: 92px;
+  font-size: 72px;
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 93.6px;
   color: #ffffff;
   word-wrap: break-word;
-  /* width: 60%; */
-  /* text-align: right; */
+  /* width: 70%; */
+  text-align: left;
 }
 #services_provided {
   display: flex;
@@ -103,11 +103,23 @@ main p {
 }
 /* MEDIA QUERIES */
 /* MEDIA QUERIES */
+@media only screen and (max-width: 991px) and (min-width: 992px) {
+  main p {
+    font-size: 55px;
+  }
+}
+@media only screen and (max-width: 991x) and (min-width: 601px) {
+  main p {
+    font-size: 55px;
+    line-height: 63px;
+  }
+}
 @media only screen and (max-width: 768px) {
   main {
     width: 100vw;
-    /* background-position-x: -200px; */
+    background-position-x: -250px;
   }
+
   main div {
     width: 70%;
     justify-content: center;
@@ -115,23 +127,24 @@ main p {
   }
   main p {
     text-align: left;
-    font-size: 55px;
+    /* font-size: 55px; */
     width: 100%;
     line-height: 58.6px;
   }
   #business_statement {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: flex-start;
   }
   #business_statement h1 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     letter-spacing: 1px;
     line-height: 43px;
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 600px) {
   main {
     background: url("../assets/We-run-all-your-marketing.jpg");
@@ -178,7 +191,14 @@ main p {
     text-align: left;
   }
 }
-
+/* @media only screen and (max-width: 599x) and (min-width: 501px) {
+  main div {
+    width: 100%;
+  }
+  main p {
+    width: 70vw;
+  }
+} */
 @media only screen and (max-width: 500px) {
   main {
     width: 100vw;
@@ -192,25 +212,33 @@ main p {
   }
   main p {
     text-align: left;
-    font-size: 25px;
-    line-height: 43.6px;
+    font-size: 40px;
+    line-height: 45.6px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
   main {
     width: 100vw;
     background-position-x: -250px;
   }
   main p {
     text-align: left;
-    font-size: 25px;
+    font-size: 35px;
     width: 100%;
-    line-height: 38.6px;
+    line-height: 40.6px;
   }
 }
-
-/* Extra small devices (phones, 600px and down) */
-
+/* @media only screen and (max-width: 599x) and (min-width: 501px) {
+  main div {
+    width: 100vw;
+    background: blue;
+    padding: 10px;
+  }
+  main p {
+    width: 100%;
+    font-size: 30px;
+  }
+} */
 /* Medium devices (landscape tablets, 768px and up) */
 
 /* Large devices (laptops/desktops, 992px and up) */

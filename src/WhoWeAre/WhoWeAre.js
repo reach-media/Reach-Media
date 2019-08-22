@@ -31,7 +31,7 @@ export default function WhoWeAre() {
   return (
     <div>
       <div id="WhoWeAre_background">
-        <div>
+        <div id="we_are">
           <h1 id="fully_service_statement">
             We are a full-service software and digital marketing agency here to
             help you <span>Reach</span> your full potential.
@@ -41,15 +41,17 @@ export default function WhoWeAre() {
             lasting relationships. We Learn about your vision, create solutios,
             and provide continious support.
           </p>
-          <Fab
-            variant="extended"
-            aria-label="delete"
-            className={classes.fab}
-            color="secondary"
-          >
-            <MailOutline className={classes.extendedIcon} />
-            Connect With Us
-          </Fab>
+          <div id="fab">
+            <Fab
+              variant="extended"
+              aria-label="delete"
+              className={classes.fab}
+              color="secondary"
+            >
+              <MailOutline className={classes.extendedIcon} />
+              Connect With Us
+            </Fab>
+          </div>
         </div>
       </div>
       <div id="all_about_us">

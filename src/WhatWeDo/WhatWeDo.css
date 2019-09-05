@@ -20,7 +20,7 @@
 #what_we_do h1 {
   text-align: center;
   font-family: "Asap", sans-serif;
-  font-size: 85px;
+  font-size: 65px;
   letter-spacing: 1px;
   line-height: 119px;
   margin-top: 5vh;
@@ -98,7 +98,7 @@ hr {
 #tech_stack {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 85vw;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -110,7 +110,9 @@ hr {
   margin: 2vw;
 }
 .tech img {
-  width: 300px;
+  /* width: 300px; */
+  width: 100%;
+
   height: 300px;
 }
 .tech p {
@@ -122,3 +124,173 @@ hr {
   line-height: 26.4px;
   color: #858587;
 }
+/* MEDIA QUERIES */
+/* (max-width:400px) and (min-width:900px) { */
+  @media only screen and (max-width:800px) and (min-width:769px){
+    .work_statements {
+      width: 30px;
+      /* text-overflow: wrap; */
+      width: 90%;
+    margin: 0 auto;
+    }
+
+    .tech {
+      /* width: 100vw; */
+      width: 35%;
+    }
+    .tech img {
+      width: 100%;
+    }
+    #connect {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 768px) and (min-width:501px){
+    #what {
+      height: 90vh;
+    }
+    #what_we_do h1 {
+      /* margin-top: 15vh; */
+      font-size: 45px;
+      line-height: 43px;
+    }
+    #working {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .work_statements {
+      width: 90%;
+    margin: 0 auto;
+      font-size: 35px;
+      text-align: center;
+    }
+    .technique {
+      flex-direction: column;
+      width: 100vw;
+    }
+    #tech_stack {
+      width: 100vw;
+    }
+    .word_side, .picture_side {
+      margin: 0 auto;
+      width: 90%;
+    }
+  
+    .tech {
+      /* width: 100vw; */
+      width: 35%;
+    }
+    .tech img {
+      width: 100%;
+  
+    }
+    #connect {
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+@media only screen and (max-width: 500px) and (min-width:321px){
+  #what {
+    height: 90vh;
+  }
+  #what_we_do h1 {
+    text-align: center;    
+    font-size: 35px;
+    letter-spacing: 1px;
+    line-height: 45px;
+    margin-top: 15vh;
+    color: #e2231a;
+  }
+  #working {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .work_statements {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 35px;
+    text-align: left;
+    line-height: 40px;
+  }
+  .technique {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .word_side, .picture_side {
+    margin: 0 auto;
+    width: 90%;
+  }
+  #tech_stack {
+    width: 100vw;
+    flex-direction: column;
+  }
+  .tech {
+    width: 100%;
+  }
+  .technique_description {
+    font-size: 35px;
+    line-height: 55px;
+  }
+  .word_side p {
+    font-size: 22px;
+  font-weight: 700;
+  line-height: 33.2px;
+  word-wrap: wrap;
+  width: 90%;
+  }
+}
+@media only screen and (max-width: 320px){
+  #what {
+    height: 90vh;
+  }
+  #what_we_do h1 {
+    margin-top: 15vh;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  #working {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .work_statements {
+    font-size: 35px;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .technique {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .word_side, .picture_side {
+    margin: 0 auto;
+    width: 90%;
+  }
+  #tech_stack {
+    width: 100vw;
+    flex-direction: column;
+  }
+  .tech {
+    width: 100%;
+  }
+  .technique_description {
+    font-size: 35px;
+    line-height: 55px;
+  }
+  .word_side p {
+    font-size: 22px;
+  font-weight: 700;
+  line-height: 33.2px;
+  word-wrap: wrap;
+  width: 90%;
+  }
+  #connect {
+    font-size: 45px;
+    line-height: 40px;
+  }
+}
+

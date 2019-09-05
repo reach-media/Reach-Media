@@ -13,7 +13,10 @@ export default function WhatWeDo() {
           <h2>A One-Stop Solution for All Your Online Needs</h2>
         </div>
       </div>
+      <div id="working">
+
       <h1 className="work_statements">How We Work</h1>
+      </div>
       <hr />
       <div className="technique">
         <div className="word_side">
@@ -33,9 +36,7 @@ export default function WhatWeDo() {
         </div>
       </div>
       <div className="technique">
-        <div className="picture_side">
-          <img src={Pic} alt="" />
-        </div>
+      
         <div className="word_side">
           <h1 className="technique_description">Design And Development</h1>
           <p>
@@ -47,6 +48,9 @@ export default function WhatWeDo() {
           <Link to="/contactus">
             <h3>Work With Us</h3>
           </Link>
+        </div>
+        <div className="picture_side">
+          <img src={Pic} alt="" />
         </div>
       </div>
       <div className="technique">

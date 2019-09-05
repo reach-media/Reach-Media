@@ -2,7 +2,7 @@ main {
   background: url("../assets/We-run-all-your-marketing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
+ background-position: right;
   /* background-position-y: -220px; */
   /* change this to around -358px for mobile */
   /* background-position-x: -158px; */
@@ -133,7 +133,7 @@ main p {
 @media only screen and (max-width: 768px) {
   main {
     width: 100vw;
-    background-position-x: -250px;
+    /* background-position-x: -250px; */
   }
 
   main div {
@@ -168,7 +168,7 @@ main p {
     background-size: cover;
     width: 100vw;
     height: 70vh;
-    background-position-x: -100px;
+    /* background-position-x: -100px; */
     border-radius: 0 0 85% 85% / 30%;
     display: flex;
     justify-content: center;
@@ -188,7 +188,7 @@ main p {
   .service h4 {
     align-items: flex-start;
     font-family: "Open Sans", sans-serif;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 500;
     letter-spacing: 1px;
     line-height: 31.4px;
@@ -218,7 +218,7 @@ main p {
 @media only screen and (max-width: 500px) {
   main {
     width: 100vw;
-    background-position-x: -200px;
+    /* background-position-x: -200px; */
   }
   main div {
     width: 100%;
@@ -235,7 +235,7 @@ main p {
 @media only screen and (max-width: 430px) {
   main {
     width: 100vw;
-    background-position-x: -250px;
+    background-position-x: -120px;
   }
   main p {
     text-align: left;

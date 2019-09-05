@@ -74,14 +74,17 @@ class Contact extends Component {
                     <h3>
                         Get started by filling out the form below. We' ll get bacj tou you in 24 hrs or less!
                     </h3>
-                    <h3><strong>- or -</strong></h3>
+                    {/* <h3><strong>- or -</strong></h3>
+                    <div id="myfab">
+
                     <Fab variant="extended" aria-label="delete" color='secondary' >
                         BOOK A FREE CONSULTATION
                     </Fab>
+                    </div> */}
                 </div>
                 <div className="container" id="third-section">
                     <div id="left-column">
-                        <h5 style={{ color: "red" }}> Tips to fill out the form</h5>
+                        <h5 style={{ color: "red" }}> Talk To Us Regarding The Following</h5>
                         <p><em>Try to describe your main challenge. For example:</em></p>
                         <p><em>- Is your website getting enough traffic?</em></p>
                         <p><em>- Are you just getting started?</em></p>
@@ -90,8 +93,8 @@ class Contact extends Component {
                         <hr />
                         <h5 style={{ color: "red" }}>Get in touch!</h5>
                         <p><strong>Email:</strong>reachmedia@gmail.com</p>
-                        <p><strong>Phone:</strong>801-123-1234</p>
-                        <p><strong>Address:</strong>The cupboard under the stairs,4 privet drive, little whinging, surrey</p>
+                        <p><strong>Phone:</strong>832-952-7770</p>
+                        {/* <p><strong>Address:</strong>The cupboard under the stairs,4 privet drive, little whinging, surrey</p> */}
                     </div>
                     <form id="right-column" onSubmit={this.handleSubmit}>
                         <div class="row">
@@ -112,7 +115,7 @@ class Contact extends Component {
                             </div>
                         </div>
                         <br />
-                        <div class="form-group">
+                        {/* <div class="form-group">
                             <select id="inputState" class="form-control" name="interestedIn" value={interestedIn} onChange={this.handleChange}>
                                 <option selected>Interested In</option>
                                 <option>Web Design</option>
@@ -123,7 +126,7 @@ class Contact extends Component {
                                 <option>Marketing Mentor</option>
                                 <option>Other</option>
                             </select>
-                        </div>
+                        </div> */}
                         <div class="form-group">
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" value={message} onChange={this.handleChange}></textarea>
                         </div>

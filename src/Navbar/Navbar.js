@@ -119,7 +119,7 @@ export default function PersistentDrawerRight() {
 
           <Toolbar className="desktop">
             <DropdownToggle nav className={classes.title} color="danger">
-              <Link to="/"> Home</Link>
+              <Link to="/"> HOME</Link>
             </DropdownToggle>
             <DropdownToggle nav className={classes.title} color="danger">
               <Link to="/whoWeAre"> WHO WE ARE</Link>

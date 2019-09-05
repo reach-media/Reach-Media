@@ -24,7 +24,7 @@ main div {
 main p {
   margin-top: 10vh;
   font-family: "Asap Bold", Arial, Helvetica, sans-serif;
-  font-size: 72px;
+  /* font-size: 72px; */
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 93.6px;

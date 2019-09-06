@@ -40,7 +40,7 @@ export default function ChooseUs() {
           <h1>Why Partner With Us</h1>
           <p>
             With us, you will get an experienced team dedicated to building and
-            maintainingy your presense online.
+            maintaining your presense online.
           </p>
           {/* <br /> */}
           <p>Our goal is for you to run your business as easily as possible.</p>
@@ -54,7 +54,7 @@ export default function ChooseUs() {
           <h1>Meet With Us</h1>
           <p>
             During Our Meeting, we will learn all about your business needs,
-            customer tendencies, and overall vision to tailor a strategy just
+            customers' tendencies, and overall vision to tailor a strategy just
             for your business or website.
           </p>
         </div>

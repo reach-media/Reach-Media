@@ -41,6 +41,11 @@ export default function SimpleExpansionPanel() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
+            In this digital age, the need for software is now more than ever, but it is not just that simple fact inspired us. What really motivated us was a passion
+            to provide <em>great</em> solutions to growing businesses. Making a website is the easy part; making a great application that will easily connect to
+            customers and optimized to bring in sales with continious support is a service that cannot be provided by everyone, and it is exactly What
+            we do here at Reach Media IT.
+            {/* customers and transform a 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum
             dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
@@ -48,7 +53,7 @@ export default function SimpleExpansionPanel() {
             amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
             sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet,
             consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit
-            amet blandit leo lobortis eget.
+            amet blandit leo lobortis eget. */}
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>

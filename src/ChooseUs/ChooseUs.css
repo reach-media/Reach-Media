@@ -121,6 +121,9 @@
   }
 }
 @media only screen and (max-width: 600px) {
+  #connect {
+    font-size: 45px;
+  }
   .why_partner_withUs {
     flex-direction: column;
     justify-content: center;

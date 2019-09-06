@@ -41,14 +41,17 @@ export default function SimpleExpansionPanel() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            As a company ourselve, we are fully commited to what it takes to thrivng in the online world, and we thoroughly enjoy that process.
+            From skething, design, development, and marketing, we are fully immersed with step of the way. Our goal is not creating a site that you'll like, but  one 
+            that will grown and increase your business.
+            {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum
             dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
             lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor sit
             amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
             sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet,
             consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit
-            amet blandit leo lobortis eget.
+            amet blandit leo lobortis eget. */}
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>

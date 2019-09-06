@@ -41,14 +41,9 @@ export default function SimpleExpansionPanel() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
-            lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit
-            amet blandit leo lobortis eget.
+            Our Vision is simple: grow with you. We see Reach MediaIT as an extension of your hard work and expertise. We will handle all your digital needs so you
+            can focus on what you want to do, which is actually running your business. Our goal is to create and maintain your online presence
+            easily and effectively.
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>

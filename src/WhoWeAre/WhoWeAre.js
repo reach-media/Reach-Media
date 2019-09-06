@@ -37,11 +37,11 @@ export default function WhoWeAre() {
             help you <span>Reach</span> your full potential.
           </h1>
           <p>
-            Our methodology is simple: Provide Excellent solutions, build
-            lasting relationships. We Learn about your vision, create solutios,
+            Our methodology is simple: Provide Excellent solutions and build
+            lasting relationships. We Learn about your vision, create solutions,
             and provide continious support.
           </p>
-          <div id="fab">
+          {/* <div id="fab">
             <Fab
               variant="extended"
               aria-label="delete"
@@ -51,7 +51,7 @@ export default function WhoWeAre() {
               <MailOutline className={classes.extendedIcon} />
               Connect With Us
             </Fab>
-          </div>
+          </div> */}
         </div>
       </div>
       <div id="all_about_us">

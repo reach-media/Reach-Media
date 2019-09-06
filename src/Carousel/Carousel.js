@@ -47,7 +47,7 @@ class SimpleSlider extends React.Component {
                 <img src={Quote} alt="" />
               </span>
               With their top-notch software and digital marketing strategies, my
-              law firm grew unprecedentally and my website is now. <br />
+              law firm grew unprecedentally and my website is now getting more traffic. <br />
               --Mark F.--
             </p>
             <img src={Work2} alt="" className="second_pic" />

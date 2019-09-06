@@ -113,9 +113,9 @@ export default function PersistentDrawerRight() {
         })}
       >
         <Toolbar>
-          <Link to="/">
+          {/* <Link to="/">
             <img src={logo} alt="logo" className="logo" />{" "}
-          </Link>
+          </Link> */}
 
           <Toolbar className="desktop">
             <DropdownToggle nav className={classes.title} color="danger">

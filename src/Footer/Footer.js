@@ -15,12 +15,26 @@ export default function Footer() {
       <article className="article">
         <section className="contact">
           <h3>TALK TO US</h3>
-          <p className="paragraph">801-123-1234</p>
+          <p className="paragraph">832-952-7770</p>
           <p className="paragraph"> reachmedia@gmail.com</p>
         </section>
-        <section className="contact">
+        <section className="contact love">
           <h3>KEEP UP WITH REACH MEDIA</h3>
-          <Subscribe />
+          <div className="icons">
+          <a href="https://www.facebook.com/reachmediawin/?eid=ARB8I2huo0LAQAOiuJc5tbgl-dtAKO0T3FVDYuwnlNRnHlIadFrJyY3G6TC4ihQCMWy8lBiwLsOxbmlr" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFacebookF} size="2x" />
+          </a>
+          <a href="https://twitter.com/ReachMedia3" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faTwitter} size="2x" />
+          </a>
+          <a href="https://www.instagram.com/reachmediawin/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} size="2x" />
+          </a>
+          <a href="https://www.linkedin.com/in/reach-media-691428191/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
+          </a>
+        </div> 
+          {/* <Subscribe /> */}
         </section>
       </article>
       <section className="social">
@@ -35,20 +49,6 @@ export default function Footer() {
           <p className="large">Terms and Conditions</p>
           <p className="pipe">&#x7c;</p>
           <p className="large">Privacy Policy</p>
-        </div>
-        <div className="icons">
-          <a href="https://www.facebook.com/reachmediawin/?eid=ARB8I2huo0LAQAOiuJc5tbgl-dtAKO0T3FVDYuwnlNRnHlIadFrJyY3G6TC4ihQCMWy8lBiwLsOxbmlr" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faFacebookF} size="2x" />
-          </a>
-          <a href="https://twitter.com/ReachMedia3" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faTwitter} size="2x" />
-          </a>
-          <a href="https://www.instagram.com/reachmediawin/" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faInstagram} size="2x" />
-          </a>
-          <a href="https://www.linkedin.com/in/reach-media-691428191/" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
-          </a>
         </div>
       </section>
     </footer>

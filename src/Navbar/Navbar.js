@@ -144,11 +144,11 @@ export default function PersistentDrawerRight() {
             {/* <DropdownToggle nav className={classes.title} color="danger">
               <Link to="/ourwork"> OUR WORK</Link>
             </DropdownToggle> */}
-            <DropdownToggle nav className={classes.title} color="danger">
+            {/* <DropdownToggle nav className={classes.title} color="danger">
               <Link to="/blog"> BLOG </Link>
-            </DropdownToggle>
+            </DropdownToggle> */}
             <DropdownToggle nav className={classes.title} color="danger">
-              <Link to="contactus">CONTACT US</Link>
+              <Link to="/contactus">CONTACT US</Link>
             </DropdownToggle>
           </Toolbar>
           <IconButton
@@ -182,34 +182,30 @@ export default function PersistentDrawerRight() {
         </div>
         <Divider />
         <List>
-          <DropdownToggle nav className={classes.menu} color="danger">
-            HOME
+        <DropdownToggle nav className={classes.menu} color="danger">
+            <Link to="/"> Home</Link>
           </DropdownToggle>
           <Divider />
           <DropdownToggle nav className={classes.menu} color="danger">
             <Link to="/whoWeAre"> WHO WE ARE</Link>
           </DropdownToggle>
-          <Divider />
-          <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle nav caret className={classes.menu} color="danger">
-              WHAT WE DO
-            </DropdownToggle>
-            <DropdownMenu>
-              <DropdownItem>WEB DEVELOPMENT</DropdownItem>
-              <DropdownItem>MARKETING</DropdownItem>
-            </DropdownMenu>
-          </UncontrolledDropdown>
-          <Divider />
           <DropdownToggle nav className={classes.menu} color="danger">
+            <Link to="/WhatWeDo"> What We Do</Link>
+          </DropdownToggle>
+      
+            {/* <DropdownToggle nav caret className={classes.menu} color="danger">
+            <Link to="/WhatWeDo"> What We Do</Link>
+            </DropdownToggle> */}
+          {/* <DropdownToggle nav className={classes.menu} color="danger">
             OUR WORK
           </DropdownToggle>
           <Divider />
           <DropdownToggle nav className={classes.menu} color="danger">
             BLOG
           </DropdownToggle>
-          <Divider />
+          <Divider /> */}
           <DropdownToggle nav className={classes.menu} color="danger">
-            CONTACT US
+          <Link to="/contactus"> Contact Us</Link> 
           </DropdownToggle>
         </List>
       </Drawer>

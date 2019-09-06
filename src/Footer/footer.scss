@@ -43,12 +43,13 @@
       }
     }
     .icons {
+      width: 10vw;
       display: flex;
       flex: 1;
       justify-content: center;
       flex-wrap: wrap;
       a {
-        padding-left: 2em;
+        margin: 2vw;
       }
     }
   }

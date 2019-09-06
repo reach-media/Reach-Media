@@ -87,31 +87,32 @@ class Contact extends Component {
                         <h5 style={{ color: "red" }}> Talk To Us Regarding The Following</h5>
                         <p><em>Try to describe your main challenge. For example:</em></p>
                         <p><em>- Is your website getting enough traffic?</em></p>
+                        <p><em>- What features or functionality would your website need to better serve your clients</em></p>
                         <p><em>- Are you just getting started?</em></p>
                         <p><em>- Is Social Media right for your business?</em></p>
                         <p><em>- Are you getting as many sales as you would like?</em></p>
                         <hr />
-                        <h5 style={{ color: "red" }}>Get in touch!</h5>
+                        {/* <h5 style={{ color: "red" }}>Get in touch!</h5>
                         <p><strong>Email:</strong>reachmedia@gmail.com</p>
-                        <p><strong>Phone:</strong>832-952-7770</p>
+                        <p><strong>Phone:</strong>832-952-7770</p> */}
                         {/* <p><strong>Address:</strong>The cupboard under the stairs,4 privet drive, little whinging, surrey</p> */}
                     </div>
-                    <form id="right-column" onSubmit={this.handleSubmit}>
-                        <div class="row">
+                    <form id="right-column" name="contact" method="POST" data-netlify="true" onSubmit={this.handleSubmit}>
+                        <div class="row inputs">
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Name" name="name" value={name} onChange={this.handleChange} />
+                                <input type="text" class="form-control contact_inputs" placeholder="Name" name="name" value={name} onChange={this.handleChange} />
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Email" name="email" value={email} onChange={this.handleChange} required />
+                                <input type="text" class="form-control contact_inputs" placeholder="Email" name="email" value={email} onChange={this.handleChange} required />
                             </div>
                         </div>
                         <br />
-                        <div class="row">
+                        <div class="row inputs">
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Phone #" name="phone" value={phone} onChange={this.handleChange} />
+                                <input type="text" class="form-control contact_inputs" placeholder="Phone #" name="phone" value={phone} onChange={this.handleChange} />
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Company" name="company" value={company} onChange={this.handleChange} />
+                                <input type="text" class="form-control contact_inputs" placeholder="Company" name="company" value={company} onChange={this.handleChange} />
                             </div>
                         </div>
                         <br />

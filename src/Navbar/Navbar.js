@@ -103,8 +103,8 @@ export default function PersistentDrawerRight() {
   }
 
   return (
-    <div className={classes.root}>
-      <CssBaseline />
+    <div className={classes.root} id="my_header">
+    <CssBaseline />
       <AppBar
         color="inherit"
         position="fixed"
@@ -116,8 +116,8 @@ export default function PersistentDrawerRight() {
           <Link to="/">
             <img src={logo} alt="logo" className="logo" />{" "}
           </Link>
-
-          <Toolbar className="desktop">
+         <div id="my_header">
+         <Toolbar className="desktop">
             <DropdownToggle nav className={classes.title} color="danger">
               <Link to="/"> HOME</Link>
             </DropdownToggle>
@@ -127,31 +127,12 @@ export default function PersistentDrawerRight() {
             <DropdownToggle nav className={classes.title} color="danger">
               <Link to="/WhatWeDo"> What We Do</Link>
             </DropdownToggle>
-            {/* <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle
-                nav
-                caret
-                className={classes.title}
-                color="danger"
-              >
-                WHAT WE DO
-              </DropdownToggle>
-              <DropdownMenu>
-                <DropdownItem>WEB DEVELOPMENT</DropdownItem>
-                <DropdownItem>MARKETING</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown> */}
-            {/* <DropdownToggle nav className={classes.title} color="danger">
-              <Link to="/ourwork"> OUR WORK</Link>
-            </DropdownToggle> */}
-            {/* <DropdownToggle nav className={classes.title} color="danger">
-              <Link to="/blog"> BLOG </Link>
-            </DropdownToggle> */}
             <DropdownToggle nav className={classes.title} color="danger">
               <Link to="/contactus">CONTACT US</Link>
             </DropdownToggle>
           </Toolbar>
-          <IconButton
+
+              <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="end"
@@ -160,6 +141,9 @@ export default function PersistentDrawerRight() {
           >
             <MenuIcon color="secondary" />
           </IconButton>
+         </div>
+          
+      
         </Toolbar>
       </AppBar>
       <Drawer
@@ -180,30 +164,18 @@ export default function PersistentDrawerRight() {
             )}
           </IconButton>
         </div>
-        <Divider />
+        
         <List>
         <DropdownToggle nav className={classes.menu} color="danger">
             <Link to="/"> Home</Link>
           </DropdownToggle>
-          <Divider />
+         
           <DropdownToggle nav className={classes.menu} color="danger">
             <Link to="/whoWeAre"> WHO WE ARE</Link>
           </DropdownToggle>
           <DropdownToggle nav className={classes.menu} color="danger">
             <Link to="/WhatWeDo"> What We Do</Link>
           </DropdownToggle>
-      
-            {/* <DropdownToggle nav caret className={classes.menu} color="danger">
-            <Link to="/WhatWeDo"> What We Do</Link>
-            </DropdownToggle> */}
-          {/* <DropdownToggle nav className={classes.menu} color="danger">
-            OUR WORK
-          </DropdownToggle>
-          <Divider />
-          <DropdownToggle nav className={classes.menu} color="danger">
-            BLOG
-          </DropdownToggle>
-          <Divider /> */}
           <DropdownToggle nav className={classes.menu} color="danger">
           <Link to="/contactus"> Contact Us</Link> 
           </DropdownToggle>

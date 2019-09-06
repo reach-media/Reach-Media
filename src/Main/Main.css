@@ -2,7 +2,7 @@ main {
   background: url("../assets/We-run-all-your-marketing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
- background-position: right;
+ /* background-position: right; */
   /* background-position-y: -220px; */
   /* change this to around -358px for mobile */
   /* background-position-x: -158px; */
@@ -235,7 +235,7 @@ main p {
 @media only screen and (max-width: 430px) {
   main {
     width: 100vw;
-    background-position-x: -120px;
+    /* background-position-x: -120px; */
   }
   /* main p {
     text-align: left;

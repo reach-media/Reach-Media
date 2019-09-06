@@ -10,12 +10,12 @@
 .slick-arrow {
   color: red;
 }
-.slick-prev {
+/* .slick-prev {
   left: 70px;
 }
 .slick-next {
   right: 70px;
-}
+} */
 .slick-prev::before,
 .slick-next::before {
   z-index: 2;
@@ -58,11 +58,11 @@
     border-radius: 50%;
   }
   .slick-prev {
-    left: -170px;
+    /* left: -170px; */
     display: none;
   }
   .slick-next {
-    right: -170px;
+    /* right: -170px; */
   }
   .second_pic {
     align-self: flex-end;

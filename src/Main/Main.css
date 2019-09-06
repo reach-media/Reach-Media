@@ -277,12 +277,13 @@ main p {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 400px) {
-  main p {
-    font-size: 25px;
+  main div p {
+    font-size: 30px;
+    line-height: 28px;
   }
 }
 @media only screen and (max-width: 600px) {
-  main p {
+  main div p {
     margin-top: 20vh;
     font-size: 30px;
     line-height: 40px;
@@ -290,7 +291,7 @@ main p {
   }
 }
 @media only screen and (max-width: 768px) {
-  main p {
+  main div p {
     margin-top: 20vh;
     font-size: 50px;
     line-height: 50px;
@@ -298,7 +299,7 @@ main p {
   }
 }
 @media only screen and (min-width: 769px) {
-  main p {
+  main div p {
     margin-top: 20vh;
     font-size: 55px;
     line-height: 50px;

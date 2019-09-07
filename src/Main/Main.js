@@ -7,7 +7,7 @@ export default function Main() {
     <div>
       <main>
         <div>
-          <p>We Advance Your Business With Great Software</p>
+          <p id="main_para">We Advance Your Business With Great Software</p>
         </div>
       </main>
       <div id="business_statement">

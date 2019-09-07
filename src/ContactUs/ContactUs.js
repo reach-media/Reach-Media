@@ -72,7 +72,7 @@ class Contact extends Component {
                 </div>
                 <div id="second-section">
                     <h3>
-                        Get started by filling out the form below. We' ll get bacj tou you in 24 hrs or less!
+                        Get started by filling out the form below. We will be sure to contact you!
                     </h3>
                     {/* <h3><strong>- or -</strong></h3>
                     <div id="myfab">

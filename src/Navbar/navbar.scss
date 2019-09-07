@@ -31,6 +31,14 @@ li {
 
 
 
+@media screen and (max-width: 800px){
+  #my_header {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+}
 @media screen and (min-width: 601px){
   .menu {
     display: none !important;
@@ -43,6 +51,6 @@ li {
   }
 .logo {
   margin-right: 23vw;
-  //  width: 50%;
+   width: 50%;
 }
 }

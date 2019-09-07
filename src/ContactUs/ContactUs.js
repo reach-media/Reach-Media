@@ -138,7 +138,6 @@ class Contact extends Component {
             name="contact"
             method="POST"
             data-netlify="true"
-            onSubmit={this.handleSubmit}
           >
             <div class="row inputs">
               <div class="col">
@@ -198,14 +197,13 @@ class Contact extends Component {
               ></textarea>
               <div className="field">
                   <div data-netlify-recapcha="true">
-                    
+
                   </div>
               </div>
             </div>
             <button type="submit" class="btn btn-danger">
               Submit
             </button>{" "}
-            */}
           </form>
         </div>
       </div>

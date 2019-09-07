@@ -7,7 +7,9 @@ import Expansion from "../Expansion/Expansion";
 import VisionExpansion from "../Expansion/VisionExpansion";
 import LoveExpansion from "../Expansion/LoveExpansion";
 
-import Us from "../assets/fatos-bytyqi-Agx5_TLsIf4-unsplash.jpg";
+import NewStory from "../assets/newStory1.jpg";
+import NewLove from "../assets/newLove1.jpg";
+import NewVision from "../assets/newVision1.jpg";
 
 const useStyles = makeStyles(theme => ({
   fab: {
@@ -56,18 +58,18 @@ export default function WhoWeAre() {
       </div>
       <div id="all_about_us">
         <div id="our_story">
-          <img src={Us} alt="" />
+          <img src={NewStory} alt="" />
           <h2>Learn About Our Story</h2>
 
           <Expansion />
         </div>
         <div id="we_love_whatWeDo">
-          <img src={Us} alt="" />
+          <img src={NewLove} alt="" />
           <h2>We Love What We Do</h2>
           <LoveExpansion />
         </div>
         <div id="our_vision">
-          <img src={Us} alt="" />
+          <img src={NewVision} alt="" />
           <h2>Our Vision</h2>
           <VisionExpansion />
         </div>

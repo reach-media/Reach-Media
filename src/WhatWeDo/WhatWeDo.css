@@ -1,7 +1,7 @@
 #what {
   margin-top: 8vh;
   /* background: url("../assets/alex-iby-HfR0W6HW_Cw-unsplash.jpg"); */
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #666666 100%),
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%,black 100%),
     url("../../src/assets/bright_idea.jpg");
   height: 70vh;
   background-repeat: no-repeat;
@@ -15,7 +15,8 @@
 }
 
 #what_we_do {
-  width: 60%;
+  margin: 0 auto;
+  width: 80%;
 }
 #what_we_do h1 {
   text-align: center;
@@ -23,8 +24,10 @@
   font-size: 65px;
   letter-spacing: 1px;
   line-height: 119px;
-  margin-top: 5vh;
   color: #e2231a;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5vh;
 }
 .technique {
   margin: 0 auto;

@@ -91,7 +91,7 @@ class Contact extends Component {
                         <p><em>- Are you just getting started?</em></p>
                         <p><em>- Is Social Media right for your business?</em></p>
                         <p><em>- Are you getting as many sales as you would like?</em></p>
-                        <hr />
+                        
                         {/* <h5 style={{ color: "red" }}>Get in touch!</h5>
                         <p><strong>Email:</strong>reachmedia@gmail.com</p>
                         <p><strong>Phone:</strong>832-952-7770</p> */}

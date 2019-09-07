@@ -2,7 +2,9 @@ import React from "react";
 import "./WhatWeDo.css";
 import { Link } from "react-router-dom";
 import WordPress from "../assets/tvTWmvF5ekyd2SB20+P0Gr95PvofxNF4yXQqS3YAAAAASUVORK5CYII=.png";
-import Pic from "../assets/343b0ec396800d1cbd0c0e6939e5afca_XL-compressor.jpg";
+import First from "../assets/first.jpg";
+import Second from "../assets/second.jpg";
+import Third from "../assets/third.jpg";
 import GoogleAnalitics from "../assets/9k=.jpg";
 export default function WhatWeDo() {
   return (
@@ -17,7 +19,7 @@ export default function WhatWeDo() {
 
       <h1 className="work_statements">How We Work</h1>
       </div>
-      <hr />
+     
       <div className="technique">
         <div className="word_side">
           <h1 className="technique_description">Discovery And Research</h1>
@@ -34,7 +36,7 @@ export default function WhatWeDo() {
           </Link>
         </div>
         <div className="picture_side">
-          <img src={Pic} alt="" />
+          <img src={First} alt="" />
         </div>
       </div>
       <div className="technique">
@@ -50,7 +52,7 @@ export default function WhatWeDo() {
           </Link> */}
         </div>
         <div className="picture_side">
-          <img src={Pic} alt="" />
+          <img src={Second} alt="" />
         </div>
       </div>
       <div className="technique">
@@ -65,12 +67,12 @@ export default function WhatWeDo() {
           </Link>
         </div>
         <div className="picture_side">
-          <img src={Pic} alt="" />
+          <img src={Third} alt="" />
         </div>
       </div>
       <div id="technologies" />
       <h1 className="work_statements">Tools And Technologies We Use</h1>
-      <hr />
+ 
       <div id="tech_stack">
         <div className="tech">
           <h4>CSS</h4>

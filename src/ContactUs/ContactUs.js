@@ -111,7 +111,27 @@ class Contact extends Component {
                         <p><strong>Phone:</strong>832-952-7770</p> */}
                         {/* <p><strong>Address:</strong>The cupboard under the stairs,4 privet drive, little whinging, surrey</p> */}
                     </div>
-                    <form id="right-column" name="contact" method="POST" data-netlify="true" onSubmit={this.handleSubmit}>
+                    <form name="contact" method="POST" data-netlify="true" onSubmit={this.handleSubmit}>
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+                    {/* <form id="right-column" name="contact" method="POST" data-netlify="true" onSubmit={this.handleSubmit}>
                         <div class="row inputs">
                             <div class="col">
                                 <input type="text" class="form-control contact_inputs" placeholder="Name" name="name" value={name} onChange={this.handleChange} />
@@ -128,7 +148,7 @@ class Contact extends Component {
                             <div class="col">
                                 <input type="text" class="form-control contact_inputs" placeholder="Company" name="company" value={company} onChange={this.handleChange} />
                             </div>
-                        </div>
+                        </div> */}
                         <br />
                         {/* <div class="form-group">
                             <select id="inputState" class="form-control" name="interestedIn" value={interestedIn} onChange={this.handleChange}>
@@ -142,10 +162,10 @@ class Contact extends Component {
                                 <option>Other</option>
                             </select>
                         </div> */}
-                        <div class="form-group">
+                        {/* <div class="form-group">
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" value={message} onChange={this.handleChange}></textarea>
                         </div>
-                        <button type="submit">Send</button>
+                        <button type="submit">Send</button> */}
                         {/* <div class="form-group">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="gridCheck" onChange={this.handleChecked} required />
@@ -161,7 +181,7 @@ class Contact extends Component {
 
                         {/* <button type="submit" class="btn btn-danger">Submit</button> */}
                         {/* name = "checkbox" value ={checkbox} onClick = {this.handleClick} */}
-                    </form>
+                    {/* </form> */}
                 </div>
             </div>
         )

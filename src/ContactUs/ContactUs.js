@@ -27,7 +27,7 @@ class Contact extends Component {
         //     return {name, email, phone, company}
         // }))
 
-        axios.get("http://localhost:9000/email").then(res => console.log(res.data))
+        axios.get("http://localhost:9000/getUsers").then(res => console.log(res.data))
         // axios
         //     .post('/api/contact', { name, email, phone, company, interestedIn, message })
         //     .then(() => this.setState({

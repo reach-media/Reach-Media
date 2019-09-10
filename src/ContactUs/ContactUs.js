@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import axios from "axios"
 import "./ContactUs.scss"
 import Fab from "@material-ui/core/Fab";
-import Email from "../functions/email"
+// import Email from "../functions/email"
 const encode = (data) => {
     return Object.keys(data)
         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -23,7 +23,11 @@ class Contact extends Component {
     handleSubmit = e => {
         const { name, email, phone, company, interestedIn, message } = this.state
         e.preventDefault()
-        console.log(Email.handler())
+        // console.log(Email.handler({name, email, phone, company},{name, email, phone, company},  function(undefined, {name, email, phone, company}) {
+        //     return {name, email, phone, company}
+        // }))
+
+        axios.get("http://localhost:9000/email").then(res => console.log(res.data))
         // axios
         //     .post('/api/contact', { name, email, phone, company, interestedIn, message })
         //     .then(() => this.setState({

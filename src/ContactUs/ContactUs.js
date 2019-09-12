@@ -21,13 +21,31 @@ class Contact extends Component {
         }
     }
     handleSubmit = e => {
-        const { name, email, phone, company, interestedIn, message } = this.state
+        const { name, email, phone, company, message } = this.state
         e.preventDefault()
         // console.log(Email.handler({name, email, phone, company},{name, email, phone, company},  function(undefined, {name, email, phone, company}) {
         //     return {name, email, phone, company}
         // }))
-
-        axios.get("http://localhost:9000/getUsers").then(res => console.log(res.data))
+        // axios({
+        //     method: "POST", 
+        //     url:"http://localhost:9000/email", 
+        //     data: {
+        //         name: name,   
+        //         email: email,
+        //         pohone: phone,
+        //         company:company,  
+        //         messsage: message
+        //     }
+        // }).then((response)=>{
+        //     if (response.data.msg === 'success'){
+        //         alert("Message Sent."); 
+        //         this.resetForm()
+        //     }else if(response.data.msg === 'fail'){
+        //         alert("Message failed to send.")
+        //     }
+        // })
+        // axios.get("http://localhost:9000/getUsers").then(res => console.log(res.data))
+        axios.get("http://localhost:9000/email").then(res => console.log(res.data))
         // axios
         //     .post('/api/contact', { name, email, phone, company, interestedIn, message })
         //     .then(() => this.setState({

@@ -1,35 +1,51 @@
 const nodemailer = require('nodemailer');
 
 exports.handler = function(event, context, callback) {
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
     let transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        // service: "gmail",
-        port: 465,
-        secure: true,
-        auth: {
-            type: 'OAuth2',
-            user: process.env.MAIL_LOGIN,
-            clientId: process.env.CLIENT_ID,
-            clientSecret: process.env.CLIENT_SECRET,
-            refreshToken: process.env.REFRESH_TOKEN,
-            accessToken: process.env.ACCESS_TOKEN
-        }
+      service: "Gmail",
+      auth: {
+        user: "yusefdaramay@gmail.com",
+        pass: "Beylacode23"
+      }
     });
-    console.log(event.body);
+    let mailOptions = {};
 
-    transporter.sendMail({
+    mailOptions = {
         from: "yousufdaramay@yahoo.com",
         to: "yusefdaramay@yahoo.com",
-        subject: process.env.SUBJECT + new Date().toLocaleString(),
-        text: event.body
-    }, function(error, info) {
-    	if (error) {
-    		callback(error);
-    	} else {
-    		callback(null, {
-			    statusCode: 200,
-			    body: "Ok"
-	    	});
-    	}
-    });
+        subject: "A comment on your post",
+        text: "Something Happened",
+        html: `<b>Somebody commented on your Post!</b>
+                  Awesome!
+            `
+      };
+  
+
+    // transporter.sendMail({
+    //     from: process.env.MAIL_LOGIN,
+    //     to: process.env.MAIL_TO,
+    //     subject: process.env.SUBJECT + new Date().toLocaleString(),
+    //     text: event.body
+    // }, function(error, info) {
+    // 	if (error) {
+    // 		callback(error);
+    // 	} else {
+    // 		callback(null, {
+	// 		    statusCode: 200,
+	// 		    body: "Ok"
+	//     	});
+    // 	}
+    // });
+    transporter.sendMail(mailOptions, function(err, res) {
+        if (err) {
+            callback(err);
+        } else {
+            callback(null, {
+                statusCode: 200,
+                body: "Ok"
+            })
+        }
+      });
+    
 }

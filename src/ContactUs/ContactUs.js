@@ -144,6 +144,7 @@ class Contact extends Component {
                         {/* name = "checkbox" value ={checkbox} onClick = {this.handleClick} */}
                     </form>
                         <button type="submit" class="btn btn-danger" onClick={this.handleSubmit}>Submit</button>
+                        <button type="submit" class="btn btn-danger" onTouchStart={this.handleSubmit}>Submit2</button>
                 </div>
                 </div>
         )

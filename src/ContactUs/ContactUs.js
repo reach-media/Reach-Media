@@ -26,15 +26,12 @@ class Contact extends Component {
         // console.log(Email.handler({name, email, phone, company},{name, email, phone, company},  function(undefined, {name, email, phone, company}) {
         //     return {name, email, phone, company}
         // }))
+
         // axios({
         //     method: "POST", 
         //     url:"http://localhost:9000/email", 
         //     data: {
-        //         name: name,   
-        //         email: email,
-        //         pohone: phone,
-        //         company:company,  
-        //         messsage: message
+        //         stringifyied
         //     }
         // }).then((response)=>{
         //     if (response.data.msg === 'success'){
@@ -44,8 +41,13 @@ class Contact extends Component {
         //         alert("Message failed to send.")
         //     }
         // })
+        const haha = {
+            name, email, phone, company, message
+        }
+        const newHaha = JSON.stringify(haha)
+        axios.post("http://localhost:9000/email", newHaha).then(res => console.log(res.data));
         // axios.get("http://localhost:9000/getUsers").then(res => console.log(res.data))
-        axios.get("http://localhost:9000/email").then(res => console.log(res.data))
+        // axios.get("http://localhost:9000/email").then(res => console.log(res.data))
         // axios
         //     .post('/api/contact', { name, email, phone, company, interestedIn, message })
         //     .then(() => this.setState({

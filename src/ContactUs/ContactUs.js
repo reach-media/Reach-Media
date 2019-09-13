@@ -141,9 +141,9 @@ class Contact extends Component {
                                 </label>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-danger" onMouseDown={this.handleSubmit}>Submit</button>
                         {/* name = "checkbox" value ={checkbox} onClick = {this.handleClick} */}
                     </form>
+                        <button type="submit" class="btn btn-danger" onClick={this.handleSubmit}>Submit</button>
                 </div>
                 </div>
         )

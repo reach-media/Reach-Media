@@ -111,7 +111,7 @@ class Contact extends Component {
                         <p><em>- Is Social Media right for your business?</em></p>
                         <p><em>- Are you getting as many sales as you would like?</em></p>
                     </div>
-                    <form id="right-column" name="contact" method="POST" data-netlify="true" onSubmit={this.handleSubmit}>
+                    <form id="right-column" name="contact" method="POST" data-netlify="true" >
                         <div class="row inputs">
                             <div class="col">
                                 <input type="text" class="form-control contact_inputs" placeholder="Name" name="name" value={name} onChange={this.handleChange} />
@@ -131,7 +131,7 @@ class Contact extends Component {
                         </div>
                         <br />
                         <div class="form-group">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" value={message} onChange={this.handleChange}></textarea>
+                            <textarea placeholder="Ask Us Any Questions Or Tell Us About Your Vision For Your Web Application" class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" value={message} onChange={this.handleChange}></textarea>
                         </div>
                         <div class="form-group">
                             <div class="form-check">
@@ -143,9 +143,8 @@ class Contact extends Component {
                         </div>
                         {/* name = "checkbox" value ={checkbox} onClick = {this.handleClick} */}
                     </form>
-                        <button type="submit" class="btn btn-danger" onClick={this.handleSubmit}>Submit</button>
-                        <button type="submit" class="btn btn-danger" onTouchStart={this.handleSubmit}>Submit2</button>
                 </div>
+                <input type="submit" class="btn btn-danger" value="Submit" onClick={this.handleSubmit} />
                 </div>
         )
     }

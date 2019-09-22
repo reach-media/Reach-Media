@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import axios from "axios"
 import "./ContactUs.scss"
 import Fab from "@material-ui/core/Fab";
-// import Email from "../functions/email"
+import Swal from 'sweetalert2'
 const encode = (data) => {
     return Object.keys(data)
         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -17,61 +17,32 @@ class Contact extends Component {
             phone: "",
             company: "",
             message: "",
-            
+            returnedData: ""    
         }
     }
+
     handleSubmit = e => {
         const { name, email, phone, company, message } = this.state
         e.preventDefault()
-        // console.log(Email.handler({name, email, phone, company},{name, email, phone, company},  function(undefined, {name, email, phone, company}) {
-        //     return {name, email, phone, company}
-        // }))
 
-        // axios({
-        //     method: "POST", 
-        //     url:"http://localhost:9000/email", 
-        //     data: {
-        //         stringifyied
-        //     }
-        // }).then((response)=>{
-        //     if (response.data.msg === 'success'){
-        //         alert("Message Sent."); 
-        //         this.resetForm()
-        //     }else if(response.data.msg === 'fail'){
-        //         alert("Message failed to send.")
-        //     }
-        // })
         const haha = {
             name, email, phone, company, message
         }
         const newHaha = JSON.stringify(haha)
-        axios.post("http://localhost:9000/email", newHaha).then(res => console.log(res.data));
-        // axios.get("http://localhost:9000/getUsers").then(res => console.log(res.data))
-        // axios.get("http://localhost:9000/email").then(res => console.log(res.data))
-        // axios
-        //     .post('/api/contact', { name, email, phone, company, interestedIn, message })
-        //     .then(() => this.setState({
-        //         isMailSent: true,
-        //         name: "",
-        //         email: "",
-        //         phone: "",
-        //         company: "",
-        //         interestedIn: "",
-        //         message: "",
-        //         checkbox: false,
-        //         error: false,
-        //     }))
-        //     .catch(() => this.setState({
-        //         error: true,
-        //         name: "",
-        //         email: "",
-        //         phone: "",
-        //         company: "",
-        //         interestedIn: "",
-        //         message: "",
-        //         checkbox: false,
-        //         isMailSent: false,
-        //     }))
+        // axios.get("http://localhost:9000/.netlify/functions/email")
+        axios.post("http://localhost:9000/.netlify/functions/email", newHaha).then(res => {
+            console.log(res.data)
+            this.setState({
+                returnedData: res.data
+            })
+        })
+        Swal.fire({
+            position: 'center',
+            type: 'success',
+            title: `We will contact you shortly`,
+            showConfirmButton: false,
+            timer: 1700
+          })
     }
     handleChange = e => {
         e.preventDefault()
@@ -111,7 +82,7 @@ class Contact extends Component {
                         <p><em>- Is Social Media right for your business?</em></p>
                         <p><em>- Are you getting as many sales as you would like?</em></p>
                     </div>
-                    <form id="right-column" name="contact" method="POST" data-netlify="true" >
+                    <form id="right-column" name="contact" method="POST" action="formHandler.php" onSubmit={this.handleSubmit} >
                         <div class="row inputs">
                             <div class="col">
                                 <input type="text" class="form-control contact_inputs" placeholder="Name" name="name" value={name} onChange={this.handleChange} />
@@ -133,18 +104,22 @@ class Contact extends Component {
                         <div class="form-group">
                             <textarea placeholder="Ask Us Any Questions Or Tell Us About Your Vision For Your Web Application" class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" value={message} onChange={this.handleChange}></textarea>
                         </div>
-                        <div class="form-group">
+                        {/* <div class="form-group">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="gridCheck" onChange={this.handleChecked} required />
                                 <label class="form-check-label" for="gridCheck">
                                     By submitting this form you agree with the storage and handling of your data by this website.
                                 </label>
                             </div>
-                        </div>
-                        {/* name = "checkbox" value ={checkbox} onClick = {this.handleClick} */}
+                        </div> */}
+                <input type="submit" class="btn btn-danger" value="Submit" />
                     </form>
+                        {/* name = "checkbox" value ={checkbox} onClick = {this.handleClick} */}
                 </div>
-                <input type="submit" class="btn btn-danger" value="Submit" onClick={this.handleSubmit} />
+                    <div id="mailing">
+
+                        <a  id="mailTo"  class="btn btn-danger" href="mailto:reachmediait@gmail.com">Click Here To Contact Us</a>
+                    </div>
                 </div>
         )
     }

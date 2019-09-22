@@ -16,7 +16,7 @@ export default function Footer() {
         <section className="contact">
           <h3>TALK TO US</h3>
           <p className="paragraph">832-952-7770</p>
-          <p className="paragraph"> reachmedia@gmail.com</p>
+          <p className="paragraph"> reachmediait@gmail.com</p>
         </section>
         <section className="contact love">
           <h3>KEEP UP WITH REACH MEDIA</h3>

@@ -1,5 +1,5 @@
 main {
-  background: url("../assets/We-run-all-your-marketing.jpg");
+  background: url("../assets/werun.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -142,7 +142,7 @@ main p {
 
 @media only screen and (max-width: 600px) {
   main {
-    background: url("../assets/We-run-all-your-marketing.jpg");
+    background: url("../assets/werun.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;

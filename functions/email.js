@@ -6,8 +6,11 @@ const nodemailer = require('nodemailer');
 app.use(json());
 
 exports.handler = function(event, context, callback) {
-  process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+  // process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
   
+  const info= JSON.parse(event.body);
+  
+  console.log(info)
   console.log(event.body)
   let transporter = nodemailer.createTransport({
     service: "Gmail",
@@ -20,42 +23,21 @@ exports.handler = function(event, context, callback) {
   
   mailOptions = {
     from: "yousufdaramay@yahoo.com",
-    to: "yusefdaramay@yahoo.com",
+    to: "reachmediait@gmail.com",
     subject: "A comment on your post",
     text: "Something Happened",
     html: `<b>Somebody commented on your Post!</b>
-    Awesome!
-    ${event.body}
+    The name of the person is ${info.name}, the phone number is ${info.phone}. Their company is ${info.company}. The email
+      is ${info.email} and this the message: ${info.message}
     `
   };
-  
-  //   The person's name is ${name}, with the email address ${email}.
-  //   The phone number is ${phone} from the company ${company}.
-  //   This is the message: ${message}
-  
-  
-  // transporter.sendMail({
-    //     from: process.env.MAIL_LOGIN,
-    //     to: process.env.MAIL_TO,
-    //     subject: process.env.SUBJECT + new Date().toLocaleString(),
-    //     text: event.body
-    // }, function(error, info) {
-      // 	if (error) {
-        // 		callback(error);
-        // 	} else {
-          // 		callback(null, {
-            // 		    statusCode: 200,
-            // 		    body: "Ok"
-            //     	});
-            // 	}
-            // });
             transporter.sendMail(mailOptions, function(err, res) {
               if (err) {
                 callback(err);
               } else {
                 callback(null, {
                   statusCode: 200,
-                  body: `${JSON.parse(event.body)}`
+                  body: `${JSON.parse(info)}`
                 })
               }
             });

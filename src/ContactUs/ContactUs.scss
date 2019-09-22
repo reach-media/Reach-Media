@@ -12,7 +12,7 @@
 #first-section{
     // border: 1px solid red;
     height: 60vh;
-    background-image: linear-gradient(180deg,rgba(255,255,255,0.5) 0%,#ffffff 100%),url(https://www.boralagency.com/wp-content/uploads/2019/04/Contact-Boral-Agency.jpg);
+    background-image: linear-gradient(180deg,rgba(255,255,255,0.5) 0%,#ffffff 100%),url("../assets/meetus.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -89,7 +89,24 @@
         flex-direction: column;
     }
 }
+@media only screen and (min-width:601px){
+    #mailing {
+        display: none;
+    }
+}
 @media only screen and (max-width:600px){
+    #mailing {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2vh;
+    }
+    #mailTO{
+        display: none;
+    }
+    #right-column {
+        display: none;
+    }
     .inputs {
         display: flex;
         flex-direction: column;
